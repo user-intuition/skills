@@ -9,7 +9,7 @@
         "get_study_report",
         "get_interview"
       ],
-      "sha256": "204d6b58c061787dfaf7df35d9141b3a4eae916e108652e21669b2ef2e9069b2",
+      "sha256": "89d2118d98293b6fdb0bd59b64ee152f498fda05a2002ffe503e0b47735daf66",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/analyze-completed-study/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/analyze-completed-study"
     },
