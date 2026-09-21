@@ -9,7 +9,7 @@
         "get_study_report",
         "get_interview"
       ],
-      "sha256": "89d2118d98293b6fdb0bd59b64ee152f498fda05a2002ffe503e0b47735daf66",
+      "sha256": "b9b69e4a5b37990b791ac5a5e77ce8cf20c9ec555fdf171663503cb5ff054184",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/analyze-completed-study/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/analyze-completed-study"
     },
@@ -99,7 +99,7 @@
         "get_study_report",
         "get_interview"
       ],
-      "sha256": "2600ade18888cc48fe06ed4c3b986336e3f936d932a3891960c9ee4cc48c800a",
+      "sha256": "a15f351bbd938514bd0f7b3083a7844005c957966cc605cfcc17c9041443c8f4",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/retrieve-study-results/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/retrieve-study-results"
     },
