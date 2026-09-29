@@ -118,8 +118,12 @@
     {
       "name": "search-research",
       "description": "Use when the user wants to find existing User Intuition findings or participant responses across authorized studies before deciding whether more qualitative research is needed.",
-      "tools": [],
-      "sha256": "ff65c725f678761336b3b8c7e550ee05b05361e421f072eb58c7fbc5cd59a765",
+      "tools": [
+        "search_research",
+        "get_study_report",
+        "get_interview"
+      ],
+      "sha256": "4e9bc0f00e6b7a3613803e6f3370c25a8b4c4a7f3c9da628f6fd57c3e12c19f1",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/search-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/search-research"
     }

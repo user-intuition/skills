@@ -69,6 +69,10 @@
     ]
   },
   "search-research": {
-    "primaryTools": []
+    "primaryTools": [
+      "search_research",
+      "get_study_report",
+      "get_interview"
+    ]
   }
 }
