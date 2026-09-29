@@ -41,4 +41,3 @@ complete current dry-run estimate and separate explicit launch approval.
 If a write returns `outcome: unknown`, follow its `recovery_action`. Retrieve the
 study, report, participants, or recruitment state before deciding whether to
 repeat it. A request ID identifies the attempt; it is not an idempotency guarantee.
-
