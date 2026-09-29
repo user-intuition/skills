@@ -15,7 +15,6 @@
   "field-a-panel": {
     "primaryTools": [
       "get_study",
-      "list_panel_countries",
       "launch_panel",
       "submit_feasibility_request",
       "pause_study",

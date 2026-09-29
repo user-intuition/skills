@@ -21,7 +21,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "5c4ce48dada93e9f473ce88e0d37140e15235c3568dce38f8f4f896104e67906",
+      "sha256": "e5e938865d0d13fbd3aa90d6f051a771cf639945c6366b1439b14e71d019a66b",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/create-study-from-brief/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/create-study-from-brief"
     },
@@ -53,14 +53,13 @@
       "description": "Use when the user wants to estimate, launch, pause, resume, or stop recruitment for a User Intuition Panel study.",
       "tools": [
         "get_study",
-        "list_panel_countries",
         "launch_panel",
         "submit_feasibility_request",
         "pause_study",
         "resume_study",
         "stop_study"
       ],
-      "sha256": "478077aa8d6a002ba5589798e5270d9e5f32e4ed1267fd6a393b02b42ba8a148",
+      "sha256": "14a4d55b542b32b6ec0df4482285d427ca4844ae8fdd9fbf29bbceeae8dd8f70",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/field-a-panel/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/field-a-panel"
     },
@@ -99,7 +98,7 @@
         "get_study_report",
         "get_interview"
       ],
-      "sha256": "a15f351bbd938514bd0f7b3083a7844005c957966cc605cfcc17c9041443c8f4",
+      "sha256": "8de41803e188312bc99e5cc804276eb3d809c02c217e207d826960d4b45a7ece",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/retrieve-study-results/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/retrieve-study-results"
     },
@@ -123,7 +122,7 @@
         "get_study_report",
         "get_interview"
       ],
-      "sha256": "4e9bc0f00e6b7a3613803e6f3370c25a8b4c4a7f3c9da628f6fd57c3e12c19f1",
+      "sha256": "ded608b8a232f86dbfabdd61a217a292eb277ab07069788b205d2a34317ef6cc",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/search-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/search-research"
     }
