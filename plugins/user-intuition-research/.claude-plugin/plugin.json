@@ -1,6 +1,6 @@
 {
   "name": "user-intuition-research",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Conduct qualitative research, retrieve source-linked study results, and search prior evidence using the User Intuition MCP server.",
   "author": {
     "name": "User Intuition",
@@ -9,6 +9,8 @@
   },
   "homepage": "https://docs.userintuition.ai/skills/overview",
   "repository": "https://github.com/user-intuition/skills",
+  "icon": ".claude-plugin/icon.svg",
+  "privacyPolicyUrl": "https://www.userintuition.ai/privacy-policy/",
   "license": "MIT",
   "keywords": [
     "user-research",
