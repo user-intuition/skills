@@ -5,6 +5,8 @@ description: Use when the user wants participants to react to a concept, prototy
 
 When the user wants a concept test:
 
+Apply the shared [approval and workflow continuity policy](../../references/approval-continuity.md). A concept asset or plan change invalidates the affected checkpoint.
+
 1. Follow the create-study-from-brief workflow and choose the correct metadata type. Use `study_type: "concept-test"` for a participant-facing concept image or non-interactive concept. Use `study_type: "prototype-test"` for a clickable prototype, staging site, live page, or web flow.
 2. A concept image can use chat, voice, or video. A concept link cannot use chat: relay the backend's question and let the user choose voice or video rather than choosing for them. A prototype test also cannot use chat; use the default voice format or an explicitly requested video format.
 3. Call `customize_study` with the user's goal and requested link or image. For a prototype include its URL, participant-facing label, intended tasks, audience, and learning goals. Let the backend structure the flow, check the asset, and reconcile it with the plan.

@@ -21,7 +21,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "b5030ecba240ae70b030ee9792afcbfc23df6917f06905ee0da729152bc3e75d",
+      "sha256": "43c567bae9905840c88809fdd68684ef0b1faef7049bd1ed1031d182d2de23e2",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/create-study-from-brief/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/create-study-from-brief"
     },
@@ -44,7 +44,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "1d7fbd508085300abc9c7ad749b0eef38fad3b6a12f3983bf539efa31ee231fa",
+      "sha256": "f0c7da2205aadf125cf9f200ab0be6f9fb8c9290e43810404b42d790caeed5c8",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/design-screeners/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/design-screeners"
     },
@@ -60,7 +60,7 @@
         "resume_study",
         "stop_study"
       ],
-      "sha256": "44f3cce7bfae4b35fd5cad3a3625f4c72b1b81f83a2d9903d902e164e0d0faf2",
+      "sha256": "0630a23ecadddf44d095519ee98f4c23fbd9158829ee958b4dccc73df50230f9",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/field-a-panel/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/field-a-panel"
     },
@@ -75,7 +75,7 @@
         "update_participant",
         "send_participant_reward"
       ],
-      "sha256": "6dfa57b12e1f9d5a8a61326e2e83496ee4c10e5b23dea1f3a26615d64ff1d21c",
+      "sha256": "db5e099170ae9dd4ed31b8bd38c47a02cb4c3551a5b92a1f69edc7528a5fccab",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/invite-your-own-participants/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/invite-your-own-participants"
     },
@@ -86,7 +86,7 @@
         "list_studies",
         "list_interviews"
       ],
-      "sha256": "aee0363c6d8e038e9c3832ca3b7c84ce4a1d918ef02b94f9231c3e1cb12f643d",
+      "sha256": "b1ebc1a67fede393d63abf87bdd9600e10883895dee6d346ea92008dae32be18",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/monitor-fielding/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/monitor-fielding"
     },
@@ -111,7 +111,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "44ba137385a1f6414b02e98b84f85cead85d41be0526c63776222c248e892065",
+      "sha256": "72703a5ce423350d2ccefb3bc8ea2e6ab3831f3cea5f294a148283e4b08922d2",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/run-a-concept-test/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/run-a-concept-test"
     },

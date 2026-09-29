@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const skillsRoot = join(root, 'plugins', 'user-intuition-research', 'skills');
+const continuityPath = join(root, 'plugins', 'user-intuition-research', 'references', 'approval-continuity.md');
 
 const expectedSkills = [
   'analyze-completed-study',
@@ -61,6 +62,16 @@ const requiredGuidance = {
 };
 
 const errors = [];
+const continuity = readFileSync(continuityPath, 'utf8');
+for (const rule of [
+  /study_id/,
+  /updated_at/,
+  /do not ask the human to\s+approve the same plan again/i,
+  /request ID identifies the attempt; it is not an idempotency guarantee/i,
+  /plan\s+approval never doubles as approval to spend/i,
+]) {
+  if (!rule.test(continuity)) errors.push(`approval-continuity is missing required guidance: ${rule.source}`);
+}
 const actualSkills = readdirSync(skillsRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
@@ -75,6 +86,20 @@ const bodies = Object.fromEntries(actualSkills.map((name) => [
   readFileSync(join(skillsRoot, name, 'SKILL.md'), 'utf8'),
 ]));
 const combined = Object.values(bodies).join('\n');
+
+for (const name of [
+  'create-study-from-brief', 'design-screeners', 'field-a-panel',
+  'invite-your-own-participants', 'run-a-concept-test',
+]) {
+  if (!/approval-continuity\.md/.test(bodies[name] ?? '')) {
+    errors.push(`${name} does not load the shared approval-continuity policy`);
+  }
+}
+
+if (!/fielding_status/.test(bodies['monitor-fielding'] ?? '') ||
+    !/Zero completions alone is not proof/i.test(bodies['monitor-fielding'] ?? '')) {
+  errors.push('monitor-fielding is missing explicit fielding-state safeguards');
+}
 
 for (const reference of removedReferences) {
   if (new RegExp(`\\b${reference}\\b`).test(combined)) {

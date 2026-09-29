@@ -5,6 +5,8 @@ description: Use when the user wants to screen participants, define qualificatio
 
 When the user asks to change screening:
 
+Apply the shared [approval and workflow continuity policy](../../references/approval-continuity.md). A screener or targeting change invalidates the affected plan and launch checkpoint.
+
 1. Call `get_study` before writing. If a Panel study is fielding, ask whether to `pause_study` or `stop_study` before editing.
 2. Call `customize_study` with the user's audience or screening request in ordinary language. Do not create targeting IDs or screener schemas yourself.
 3. Let Customize Plan match standard criteria such as age or household income to canonical targeting attributes. It should use custom screeners only where appropriate.
