@@ -119,6 +119,7 @@
       "description": "Use when the user wants to find existing User Intuition findings or participant responses across authorized studies before deciding whether more qualitative research is needed.",
       "tools": [
         "search_research",
+        "answer_research",
         "get_study_report",
         "get_interview"
       ],

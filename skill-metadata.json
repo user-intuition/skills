@@ -70,6 +70,7 @@
   "search-research": {
     "primaryTools": [
       "search_research",
+      "answer_research",
       "get_study_report",
       "get_interview"
     ]
