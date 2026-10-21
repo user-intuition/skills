@@ -13,4 +13,4 @@ Apply the shared [approval and workflow continuity policy](../../references/appr
 4. For an image whose bytes or readable local path are available, base64-encode the raw file and pass `concept_image` with its filename, MIME type, and the user's participant-facing label. Otherwise, a public downloadable URL and stable label can be sent in the message. If the client exposes only an opaque attachment reference, explain that client limitation and offer the available upload routes.
 5. Relay every `response_type: "question"` to the user, including mode or asset confirmations, and send their answer back unchanged.
 6. Call `get_study`, return the complete persisted plan and concept configuration, and obtain approval of that exact version. Never request credentials or promise that a login-protected URL can be used.
-7. Field through the Panel or BYOP Skill only after provisioning and current-plan approval. Dry-run Panel cost and require separate confirmation before launch.
+7. Field through the Panel or BYOP Skill only after provisioning and current-plan approval. Estimate Panel cost with `estimate_panel` and require separate confirmation before launch.

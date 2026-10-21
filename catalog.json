@@ -7,9 +7,13 @@
       "tools": [
         "generate_report",
         "get_study_report",
-        "get_interview"
+        "get_interview",
+        "get_report_job",
+        "chat_research_session",
+        "queue_research_chat",
+        "view_research_answer"
       ],
-      "sha256": "b9b69e4a5b37990b791ac5a5e77ce8cf20c9ec555fdf171663503cb5ff054184",
+      "sha256": "c4eec17d2ea1e71b9d82323cad2206fe4bae2cfe05cfcb2433539f81f309b458",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/analyze-completed-study/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/analyze-completed-study"
     },
@@ -18,10 +22,12 @@
       "description": "Use when the user wants to create a User Intuition interview study from a brief, goal, problem, or research idea.",
       "tools": [
         "create_study",
+        "queue_customize_study",
+        "get_customize_study_job",
         "customize_study",
         "get_study"
       ],
-      "sha256": "e5e938865d0d13fbd3aa90d6f051a771cf639945c6366b1439b14e71d019a66b",
+      "sha256": "790021e61de1e6fa1b5414316c5131711c2d840f1e209b2c33b158240d8d34c3",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/create-study-from-brief/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/create-study-from-brief"
     },
@@ -53,13 +59,14 @@
       "description": "Use when the user wants to estimate, launch, pause, resume, or stop recruitment for a User Intuition Panel study.",
       "tools": [
         "get_study",
+        "estimate_panel",
         "launch_panel",
         "submit_feasibility_request",
         "pause_study",
         "resume_study",
         "stop_study"
       ],
-      "sha256": "14a4d55b542b32b6ec0df4482285d427ca4844ae8fdd9fbf29bbceeae8dd8f70",
+      "sha256": "44c11cc483c14d7f2b7f6c47c1593713672d3dcca249043ed52df59042b6d1c7",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/field-a-panel/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/field-a-panel"
     },
@@ -98,7 +105,7 @@
         "get_study_report",
         "get_interview"
       ],
-      "sha256": "8de41803e188312bc99e5cc804276eb3d809c02c217e207d826960d4b45a7ece",
+      "sha256": "010252ac4b8768a8d66f490f444dd24da1be2b7b2f35403e55d650bf866e1234",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/retrieve-study-results/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/retrieve-study-results"
     },
@@ -110,7 +117,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "72703a5ce423350d2ccefb3bc8ea2e6ab3831f3cea5f294a148283e4b08922d2",
+      "sha256": "9c401ba7aba891fde2336de325c2cf65b1c03a594f78bc0186eb8ee7857bf4f7",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/run-a-concept-test/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/run-a-concept-test"
     },
