@@ -2,6 +2,8 @@
   "create-study-from-brief": {
     "primaryTools": [
       "create_study",
+      "queue_customize_study",
+      "get_customize_study_job",
       "customize_study",
       "get_study"
     ]
@@ -15,6 +17,7 @@
   "field-a-panel": {
     "primaryTools": [
       "get_study",
+      "estimate_panel",
       "launch_panel",
       "submit_feasibility_request",
       "pause_study",
@@ -49,7 +52,11 @@
     "primaryTools": [
       "generate_report",
       "get_study_report",
-      "get_interview"
+      "get_interview",
+      "get_report_job",
+      "chat_research_session",
+      "queue_research_chat",
+      "view_research_answer"
     ]
   },
   "curate-interview-quality": {
