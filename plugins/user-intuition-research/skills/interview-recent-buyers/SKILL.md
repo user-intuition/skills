@@ -5,7 +5,7 @@ description: Use when the user wants to interview recent buyers or new customers
 
 When the user wants to hear from recent buyers:
 
-Apply the shared [cohort invite policy](../../references/cohort-invite-policy.md) and [approval and workflow continuity policy](../../references/approval-continuity.md).
+Apply the shared [cohort invite policy](references/cohort-invite-policy.md) and [approval and workflow continuity policy](references/approval-continuity.md).
 
 1. Ask what decision the interviews should inform (for example: which claim to lead with on the pack, why first orders skew to one product, what nearly stopped checkout) and which buyers matter: first-time or repeat, a product or collection, a channel.
 2. Find orders in the chosen window with the store tools the agent has (a Shopify or other commerce MCP), an order export, or a loyalty-card, retailer, or retail-media audience export the user provides. If the user has no customer data, use `interview-category-shoppers` to recruit buyers from the consumer panel instead. Keep one row per customer: email, customer ID, order date, and the products bought.

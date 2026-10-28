@@ -5,7 +5,7 @@ description: Use when the user wants to understand why customers stopped buying,
 
 When the user wants to hear from lapsed customers:
 
-Apply the shared [cohort invite policy](../../references/cohort-invite-policy.md) and [approval and workflow continuity policy](../../references/approval-continuity.md).
+Apply the shared [cohort invite policy](references/cohort-invite-policy.md) and [approval and workflow continuity policy](references/approval-continuity.md).
 
 1. Ask what counts as lapsed for this business. Default: bought at least once, no order in the last 90 days, and a previous order within the last 12 months. Adjust to the product's normal repurchase cycle.
 2. Find those customers with the store or CRM tools the agent has, or a customer or loyalty-card export with last purchase date. If the user has no customer data, use `interview-brand-switchers` to recruit lapsed brand buyers from the consumer panel instead. Keep email, customer ID, first and last order dates, order count, and what they last bought.

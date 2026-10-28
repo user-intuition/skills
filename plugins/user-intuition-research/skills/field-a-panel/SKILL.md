@@ -5,7 +5,7 @@ description: Use when the user wants to estimate, launch, pause, resume, or stop
 
 When the user wants to field a Panel:
 
-Apply the shared [approval and workflow continuity policy](../../references/approval-continuity.md).
+Apply the shared [approval and workflow continuity policy](references/approval-continuity.md).
 
 1. Call `get_study` and verify `recruiting_method` is `panel` and `provisioning_status` is `provisioned`.
 2. Compare the returned study with any trusted checkpoint. If it matches an already approved plan, carry that approval forward without repeating the review. Otherwise return the complete current `study_plan` with its audience, screeners, concepts, and interview settings, obtain explicit approval, and retain a new checkpoint.

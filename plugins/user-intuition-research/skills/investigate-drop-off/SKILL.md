@@ -5,7 +5,7 @@ description: Use when the user wants to understand why people drop off, abandon 
 
 When the user wants to understand a drop-off:
 
-Apply the shared [cohort invite policy](../../references/cohort-invite-policy.md) and [approval and workflow continuity policy](../../references/approval-continuity.md).
+Apply the shared [cohort invite policy](references/cohort-invite-policy.md) and [approval and workflow continuity policy](references/approval-continuity.md).
 
 1. Ask which step matters and what decision the interviews should inform. Read the funnel with the analytics tools the agent has, and report the step, the drop-off rate, and the window.
 2. Find the people who reached the step and did not complete it, in the chosen window (default: the last 14 days). Only identified users with an email can be invited; report how many dropped off in total versus how many are reachable.

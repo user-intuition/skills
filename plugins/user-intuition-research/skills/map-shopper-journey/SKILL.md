@@ -5,7 +5,7 @@ description: Use when the user wants to map the shopper journey or path to purch
 
 When the user wants to map the shopper journey:
 
-Apply the shared [consumer panel study policy](../../references/consumer-panel-study.md) and [approval and workflow continuity policy](../../references/approval-continuity.md).
+Apply the shared [consumer panel study policy](references/consumer-panel-study.md) and [approval and workflow continuity policy](references/approval-continuity.md).
 
 1. Ask which trip and which decision: the category, the retailer or channel (in store, online, delivery app), and what the user will change (shelf placement, pack, promotion, page content, assortment).
 2. Define the shoppers by a recent trip: bought the category at that retailer or channel in the last 2–4 weeks, so the trip is fresh. Use the panel by default; use `interview-recent-buyers` if the user has their own order or loyalty data.

@@ -5,7 +5,7 @@ description: Use when the user wants to understand why subscribers or members ca
 
 When the user wants to hear from people who cancelled:
 
-Apply the shared [cohort invite policy](../../references/cohort-invite-policy.md) and [approval and workflow continuity policy](../../references/approval-continuity.md).
+Apply the shared [cohort invite policy](references/cohort-invite-policy.md) and [approval and workflow continuity policy](references/approval-continuity.md).
 
 1. Ask what decision the interviews should inform and which cancellations count: full cancellations only, or downgrades and pauses too, and which plans or products.
 2. Find cancellations in the chosen window (default: the last 30 days) with the billing tools the agent has (a Stripe or other billing MCP) or an export. Keep email, customer ID, plan, start date, cancellation date, and any cancellation reason the customer gave.

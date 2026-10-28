@@ -5,7 +5,7 @@ description: Use when the user wants a usage and attitudes (U&A) study, to under
 
 When the user wants a usage and attitudes study:
 
-Apply the shared [consumer panel study policy](../../references/consumer-panel-study.md) and [approval and workflow continuity policy](../../references/approval-continuity.md).
+Apply the shared [consumer panel study policy](references/consumer-panel-study.md) and [approval and workflow continuity policy](references/approval-continuity.md).
 
 1. Ask what the study should inform: innovation, positioning, a new occasion, or a refresh of what the team believes about its consumers. Ask which markets.
 2. Define the audience by category use: used the category in the window, with a spread of heavy, medium, and light users, and optionally lapsed users. Ask whether any segment needs its own quota.

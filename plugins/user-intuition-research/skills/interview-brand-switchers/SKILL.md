@@ -5,7 +5,7 @@ description: Use when the user wants to understand why shoppers switch brands, t
 
 When the user wants to hear from brand switchers:
 
-Apply the shared [consumer panel study policy](../../references/consumer-panel-study.md) and [approval and workflow continuity policy](../../references/approval-continuity.md).
+Apply the shared [consumer panel study policy](references/consumer-panel-study.md) and [approval and workflow continuity policy](references/approval-continuity.md).
 
 1. Ask which switch matters: away from the user's brand, toward it, or to store brands, and in what window (default: switched in the last 6 months).
 2. Define the audience by behavior: used to buy brand A regularly, now buys brand B most often, with the timing of the change. Include a small group who considered switching and stayed, if the user wants to learn what holds people.

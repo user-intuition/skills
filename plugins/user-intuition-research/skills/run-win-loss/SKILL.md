@@ -5,7 +5,7 @@ description: Use when the user wants to run win-loss interviews, understand why 
 
 When the user wants win-loss interviews:
 
-Apply the shared [cohort invite policy](../../references/cohort-invite-policy.md) and [approval and workflow continuity policy](../../references/approval-continuity.md).
+Apply the shared [cohort invite policy](references/cohort-invite-policy.md) and [approval and workflow continuity policy](references/approval-continuity.md).
 
 1. Ask which decisions to cover: lost, won, or both (both is usually more useful), the window (default: closed in the last 60 days), and any segment, product line, or competitor of interest.
 2. Find closed deals with the CRM tools the agent has (a HubSpot, Salesforce, or other CRM MCP) or an export. For each deal, pick the buyer contact who made or led the decision and keep their email, contact ID, deal stage, close date, and the competitor if recorded.

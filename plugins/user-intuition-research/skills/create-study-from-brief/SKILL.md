@@ -5,7 +5,7 @@ description: Use when the user wants to create a User Intuition interview study 
 
 When the user asks to create a study:
 
-Apply the shared [approval and workflow continuity policy](../../references/approval-continuity.md).
+Apply the shared [approval and workflow continuity policy](references/approval-continuity.md).
 
 1. Ask the human to choose Panel, BYOP (bring your own participants), or synthetic respondents when unstated. Set `recruiting_method` to `panel`, `byop`, or `synthetic_respondents` accordingly. Synthetic respondents use chat only. Never guess.
 2. Keep the name to 40 characters. Unless the user requests an override, omit `interview_format`, `language`, and `voice` so `create_study` applies the current defaults: a voice interview in English with Elliot for Panel or BYOP, and chat for synthetic respondents. If the user requests another mode or language, read `userintuition://catalog/modes` or `userintuition://catalog/languages` for discovery. The public voice override is `male` (Elliot) or `female` (Clara), including for chat; implementation IDs are not accepted. If the client cannot read MCP resources, use the public API reference for valid settings.
