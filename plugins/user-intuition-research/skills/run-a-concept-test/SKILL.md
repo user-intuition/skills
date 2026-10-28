@@ -1,6 +1,6 @@
 ---
 name: run-a-concept-test
-description: Use when the user wants participants to react to a concept, prototype, design, or landing page during a User Intuition interview.
+description: Use when the user wants participants to react to a concept, packaging or pack design, product claim, message, ad, prototype, design, or landing page during a User Intuition interview, including pack tests, claims tests, and concept screening for a consumer brand.
 ---
 
 When the user wants a concept test:
@@ -13,4 +13,5 @@ Apply the shared [approval and workflow continuity policy](../../references/appr
 4. For an image whose bytes or readable local path are available, base64-encode the raw file and pass `concept_image` with its filename, MIME type, and the user's participant-facing label. Otherwise, a public downloadable URL and stable label can be sent in the message. If the client exposes only an opaque attachment reference, explain that client limitation and offer the available upload routes.
 5. Relay every `response_type: "question"` to the user, including mode or asset confirmations, and send their answer back unchanged.
 6. Call `get_study`, return the complete persisted plan and concept configuration, and obtain approval of that exact version. Never request credentials or promise that a login-protected URL can be used.
-7. Field through the Panel or BYOP Skill only after provisioning and current-plan approval. Estimate Panel cost with `estimate_panel` and require separate confirmation before launch.
+7. For packaging, claims, or message tests, put in the brief whether each participant sees one option (monadic: cleaner reactions, more participants per option) or several in turn (sequential: direct comparison; rotate the order). Ask for an unprompted first read before any probing: what they noticed first, what they think it says, and who it is for. Then probe believability, relevance, and what would make them pick it up or put it back. For consumer audiences, apply the [consumer panel study policy](../../references/consumer-panel-study.md). Never write or invent product claims for the user; test only the claims they supply.
+8. Field through the Panel or BYOP Skill only after provisioning and current-plan approval. Estimate Panel cost with `estimate_panel` and require separate confirmation before launch.

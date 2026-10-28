@@ -46,6 +46,7 @@ Restate what they want in a sentence or two, then hand off:
 | Draft a study plan, or make sense of transcripts, notes, or reviews they already have | `user-research` |
 | Turn a goal or brief into an interview study | `create-study-from-brief` |
 | Show a concept, packaging, prototype, or landing page | `run-a-concept-test` |
+| Hear from category or brand shoppers, brand switchers, a shopper journey, or a usage and attitudes study | `interview-category-shoppers`, `interview-brand-switchers`, `map-shopper-journey`, `run-usage-and-attitudes` |
 | Qualify exactly the right people | `design-screeners` |
 | Recruit people from the panel | `field-a-panel` |
 | Interview their own customers or users | `invite-your-own-participants` |

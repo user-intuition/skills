@@ -71,6 +71,20 @@
       "documentation": "https://docs.userintuition.ai/skills/field-a-panel"
     },
     {
+      "name": "interview-brand-switchers",
+      "description": "Use when the user wants to understand why shoppers switch brands, trade down to store brands or private label, stopped buying a brand, or chose a competitor, and wants to interview switchers or lapsed brand buyers recruited from a consumer panel rather than from their own customer list.",
+      "tools": [
+        "create_study",
+        "customize_study",
+        "get_study",
+        "estimate_panel",
+        "launch_panel"
+      ],
+      "sha256": "fb61cfb14a71e88387324c8f7e724ca83f3d4b628b0dc152860053f0d836a1d6",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-brand-switchers/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/interview-brand-switchers"
+    },
+    {
       "name": "interview-cancellations",
       "description": "Use when the user wants to understand why subscribers or members cancelled, churned, downgraded, or paused, run a churn or cancellation interview study, or talk to people who just cancelled, using subscription data from Stripe, a billing system, or an export.",
       "tools": [
@@ -83,26 +97,40 @@
       "documentation": "https://docs.userintuition.ai/skills/interview-cancellations"
     },
     {
+      "name": "interview-category-shoppers",
+      "description": "Use when the user wants to interview shoppers or buyers of a product category or brand, such as frozen pizza buyers, coffee drinkers, pet food buyers, or skincare shoppers, understand how consumers choose in a category, or run consumer insights or shopper research for a CPG brand or retailer, recruiting consumers who match a buying profile.",
+      "tools": [
+        "create_study",
+        "customize_study",
+        "get_study",
+        "estimate_panel",
+        "launch_panel"
+      ],
+      "sha256": "a5e4b9c9fb92e87e64610e7f0ec212adcc467128cc2efc1524ec9e85a389d534",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-category-shoppers/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/interview-category-shoppers"
+    },
+    {
       "name": "interview-lapsed-customers",
-      "description": "Use when the user wants to understand why customers stopped buying, did not reorder, switched brands, or went quiet, interview lapsed or one-time buyers, or win back customers, using order history from Shopify, a store, a CRM, or a customer export.",
+      "description": "Use when the user wants to understand why customers stopped buying, did not reorder, switched brands, or went quiet, interview lapsed or one-time buyers, or win back customers, using order history from Shopify, a store, a CRM, loyalty-card or retailer data, or a customer export.",
       "tools": [
         "get_study",
         "list_participants",
         "create_participants"
       ],
-      "sha256": "2416714ca1b43034bd353285a53b0d0e0df805f8628a789ecda92aad11d82ae9",
+      "sha256": "158e8bfd2f25d1b3be0579c6778de17ffe2076709bd26293ff602693bc81ce33",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-lapsed-customers/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/interview-lapsed-customers"
     },
     {
       "name": "interview-recent-buyers",
-      "description": "Use when the user wants to interview recent buyers or new customers, understand why people bought, what the shopper trip or purchase decision looked like, what nearly stopped the order, or how a first order, product, or pack is landing, using orders from Shopify or another store.",
+      "description": "Use when the user wants to interview recent buyers or new customers, understand why people bought, what the shopper trip or purchase decision looked like, what nearly stopped the order, or how a first order, product, or pack is landing, using orders from Shopify or another store, loyalty-card or retailer data, or a customer export.",
       "tools": [
         "get_study",
         "list_participants",
         "create_participants"
       ],
-      "sha256": "e78dcf2820581834ee8feb66352b269de09cbf1c7fc94490c61469fbd360dafb",
+      "sha256": "40e970013cd5bc6a6e556f714fe30cf679a5047b456f81258f48a643a244f578",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-recent-buyers/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/interview-recent-buyers"
     },
@@ -134,6 +162,20 @@
       "documentation": "https://docs.userintuition.ai/skills/invite-your-own-participants"
     },
     {
+      "name": "map-shopper-journey",
+      "description": "Use when the user wants to map the shopper journey or path to purchase, understand a shopping trip in store or online, what happens at the shelf or on the product page, how shoppers build a list, substitute, or decide in the aisle, or run shopper marketing research for a brand or retailer.",
+      "tools": [
+        "create_study",
+        "customize_study",
+        "get_study",
+        "estimate_panel",
+        "launch_panel"
+      ],
+      "sha256": "a400b10dc203086f539eaac1caaa3f1e8f7bbedb0aa0e6c32fd678aeeebd868a",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/map-shopper-journey/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/map-shopper-journey"
+    },
+    {
       "name": "monitor-fielding",
       "description": "Use when the user wants a read-only status snapshot of User Intuition studies or interviews.",
       "tools": [
@@ -159,15 +201,29 @@
     },
     {
       "name": "run-a-concept-test",
-      "description": "Use when the user wants participants to react to a concept, prototype, design, or landing page during a User Intuition interview.",
+      "description": "Use when the user wants participants to react to a concept, packaging or pack design, product claim, message, ad, prototype, design, or landing page during a User Intuition interview, including pack tests, claims tests, and concept screening for a consumer brand.",
       "tools": [
         "create_study",
         "customize_study",
         "get_study"
       ],
-      "sha256": "9c401ba7aba891fde2336de325c2cf65b1c03a594f78bc0186eb8ee7857bf4f7",
+      "sha256": "de71467fe8bcfeefcc8d4a4e199681fb96c2e9b865ca0c88441a19f1f937b7df",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/run-a-concept-test/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/run-a-concept-test"
+    },
+    {
+      "name": "run-usage-and-attitudes",
+      "description": "Use when the user wants a usage and attitudes (U&A) study, to understand how and when consumers use a product or category, usage occasions, habits, needs, category perceptions, or brand repertoire, or to find unmet needs and white space for a consumer brand.",
+      "tools": [
+        "create_study",
+        "customize_study",
+        "get_study",
+        "estimate_panel",
+        "launch_panel"
+      ],
+      "sha256": "59d58d39e182a09ad91219c581989c4ac032cccf61e215066c59e5fdea57597e",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/run-usage-and-attitudes/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/run-usage-and-attitudes"
     },
     {
       "name": "run-win-loss",
@@ -201,19 +257,19 @@
         "get_account",
         "list_organizations"
       ],
-      "sha256": "de9ae3f12979f051e0c54787a49981c4f821435ea4f0dcf244c5fa80a2b66056",
+      "sha256": "95574f29f1cd5379c3a59240cbcf53f7749b673e241ac9966fe2aef41b29699a",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/setup/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/setup"
     },
     {
       "name": "user-research",
-      "description": "Use when the user wants to plan user or customer interviews, write a discussion guide or interview guide, design a screener, decide what to ask customers, synthesize interview transcripts, call notes, open-ended survey answers, reviews, or support tickets into themes, talk to customers or shoppers, test a concept, packaging, claim, or message, understand why people buy, switch brands, or churn, or run AI-moderated interviews with real people.",
+      "description": "Use when the user wants to plan user or customer interviews, write a discussion guide or interview guide, design a screener, decide what to ask customers, synthesize interview transcripts, call notes, open-ended survey answers, reviews, or support tickets into themes, talk to customers or shoppers, test a concept, packaging, claim, or message, run shopper research, a usage and attitudes (U&A) study, a path-to-purchase study, or consumer insights for a CPG brand or retailer, understand category buyers, why people buy, switch brands, or churn, or run AI-moderated interviews with real people.",
       "tools": [
         "create_research_session",
         "upload_research_source",
         "chat_research_session"
       ],
-      "sha256": "708410d85a1d1d8e7e445b4b56f8cf1af1a1f486bfe2197422da78b00f623b14",
+      "sha256": "fef283931b0f0a31fc285b2b6e9abbc600d76f766cafd48ffc5817aeb2680b54",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/user-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/user-research"
     }

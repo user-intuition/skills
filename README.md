@@ -49,6 +49,10 @@ with `USERINTUITION_API_KEY` set (get a key from your [dashboard](https://app.us
 |-------|---------|
 | `setup` | Check the connection, ask what you want to learn, and route to the right workflow |
 | `user-research` | Plan a study or synthesize research you already have, no account needed; then field it with real people |
+| `interview-category-shoppers` | Interview category or brand shoppers recruited from the consumer panel by what they buy |
+| `interview-brand-switchers` | Hear why shoppers switched brands or traded down, recruited from the consumer panel |
+| `map-shopper-journey` | Map the path to purchase, from trip trigger to shelf or page to first use |
+| `run-usage-and-attitudes` | Usage and attitudes: occasions, habits, needs, and brand repertoire |
 | `interview-recent-buyers` | Interview people who just bought, from Shopify or any store's orders |
 | `interview-lapsed-customers` | Find customers who stopped buying and hear why |
 | `interview-cancellations` | Interview subscribers soon after they cancel, from Stripe or any billing data |

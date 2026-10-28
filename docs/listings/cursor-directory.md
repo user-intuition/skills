@@ -27,7 +27,7 @@ User Intuition runs AI-moderated interviews with real people and brings back fin
 ## What's included
 
 - The hosted User Intuition MCP server (`https://mcp.userintuition.ai/mcp`, browser sign-in).
-- 17 workflow skills: `setup`, `user-research` (plan or synthesize with no account), `create-study-from-brief`, `design-screeners`, `field-a-panel`, `invite-your-own-participants`, `run-a-concept-test`, `interview-recent-buyers`, `interview-lapsed-customers`, `interview-cancellations`, `run-win-loss`, `investigate-drop-off`, `monitor-fielding`, `analyze-completed-study`, `curate-interview-quality`, `retrieve-study-results`, `search-research`.
+- 21 workflow skills: `setup`, `user-research` (plan or synthesize with no account), `create-study-from-brief`, `design-screeners`, `field-a-panel`, `invite-your-own-participants`, `run-a-concept-test`, `interview-category-shoppers`, `interview-brand-switchers`, `map-shopper-journey`, `run-usage-and-attitudes`, `interview-recent-buyers`, `interview-lapsed-customers`, `interview-cancellations`, `run-win-loss`, `investigate-drop-off`, `monitor-fielding`, `analyze-completed-study`, `curate-interview-quality`, `retrieve-study-results`, `search-research`.
 
 ## Example prompts
 

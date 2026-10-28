@@ -130,5 +130,41 @@
       "get_account",
       "list_organizations"
     ]
+  },
+  "interview-brand-switchers": {
+    "primaryTools": [
+      "create_study",
+      "customize_study",
+      "get_study",
+      "estimate_panel",
+      "launch_panel"
+    ]
+  },
+  "interview-category-shoppers": {
+    "primaryTools": [
+      "create_study",
+      "customize_study",
+      "get_study",
+      "estimate_panel",
+      "launch_panel"
+    ]
+  },
+  "map-shopper-journey": {
+    "primaryTools": [
+      "create_study",
+      "customize_study",
+      "get_study",
+      "estimate_panel",
+      "launch_panel"
+    ]
+  },
+  "run-usage-and-attitudes": {
+    "primaryTools": [
+      "create_study",
+      "customize_study",
+      "get_study",
+      "estimate_panel",
+      "launch_panel"
+    ]
   }
 }
