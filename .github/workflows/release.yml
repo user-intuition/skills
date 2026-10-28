@@ -1,0 +1,28 @@
+name: Release Skill ZIPs
+
+# Runs only when a version tag (v*) is pushed. Builds the Claude Desktop / claude.ai
+# skill ZIPs and attaches them to the GitHub release for that tag.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm test
+      - run: node scripts/build-desktop-zip.mjs
+      - name: Attach ZIPs to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          gh release view "$TAG" >/dev/null 2>&1 || gh release create "$TAG" --title "$TAG" --generate-notes
+          gh release upload "$TAG" dist/*.zip dist/desktop/*.zip --clobber

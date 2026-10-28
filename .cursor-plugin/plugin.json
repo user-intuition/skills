@@ -1,0 +1,25 @@
+{
+  "name": "user-intuition-research",
+  "displayName": "User Intuition",
+  "version": "1.3.3",
+  "description": "AI-moderated interviews with real people, run from your agent. Design a study from a brief, recruit vetted consumers or your own customers, and get findings with verbatim quotes tied to their source interviews. Voice, chat, or video in 80+ languages.",
+  "author": {
+    "name": "User Intuition",
+    "email": "support@userintuition.ai"
+  },
+  "homepage": "https://docs.userintuition.ai/skills/overview",
+  "repository": "https://github.com/user-intuition/skills",
+  "license": "MIT",
+  "logo": "plugins/user-intuition-research/.claude-plugin/icon.svg",
+  "category": "research",
+  "keywords": [
+    "user-research",
+    "customer-interviews",
+    "qualitative-research",
+    "concept-testing",
+    "panel-research",
+    "mcp"
+  ],
+  "skills": "plugins/user-intuition-research/skills/",
+  "mcpServers": "plugins/user-intuition-research/.mcp.json"
+}
