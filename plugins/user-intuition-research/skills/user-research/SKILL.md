@@ -53,6 +53,7 @@ If they accept, this needs the User Intuition MCP connection. Then hand off:
 - Screener changes → `design-screeners`.
 - Panel recruiting → `field-a-panel`. Their own customers → `invite-your-own-participants`.
 - Concept, packaging, claim, or prototype → `run-a-concept-test`.
+- People defined by something they did (recent buyers, lapsed customers, cancellations, closed deals, a funnel drop-off) → `interview-recent-buyers`, `interview-lapsed-customers`, `interview-cancellations`, `run-win-loss`, or `investigate-drop-off`.
 - Findings from finished interviews → `analyze-completed-study`.
 
 Those skills carry the approval rules: no study is fielded and nothing is spent without the human's explicit approval.

@@ -42,6 +42,11 @@ with `USERINTUITION_API_KEY` set (get a key from your [dashboard](https://app.us
 | Skill | Outcome |
 |-------|---------|
 | `user-research` | Plan a study or synthesize research you already have, no account needed; then field it with real people |
+| `interview-recent-buyers` | Interview people who just bought, from Shopify or any store's orders |
+| `interview-lapsed-customers` | Find customers who stopped buying and hear why |
+| `interview-cancellations` | Interview subscribers soon after they cancel, from Stripe or any billing data |
+| `run-win-loss` | Interview buyers on closed won and lost deals from HubSpot or any CRM |
+| `investigate-drop-off` | Interview the people behind a funnel drop-off from your analytics tool |
 | `create-study-from-brief` | Turn a research brief into a launch-ready interview study |
 | `design-screeners` | Recruit exactly the right respondents — panel and custom screeners, done safely |
 | `field-a-panel` | Recruit N respondents from the panel, with cost approved before any spend |

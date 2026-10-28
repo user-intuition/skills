@@ -89,5 +89,40 @@
       "chat_research_session"
     ],
     "requiresAccount": false
+  },
+  "interview-cancellations": {
+    "primaryTools": [
+      "get_study",
+      "list_participants",
+      "create_participants"
+    ]
+  },
+  "interview-lapsed-customers": {
+    "primaryTools": [
+      "get_study",
+      "list_participants",
+      "create_participants"
+    ]
+  },
+  "interview-recent-buyers": {
+    "primaryTools": [
+      "get_study",
+      "list_participants",
+      "create_participants"
+    ]
+  },
+  "investigate-drop-off": {
+    "primaryTools": [
+      "get_study",
+      "list_participants",
+      "create_participants"
+    ]
+  },
+  "run-win-loss": {
+    "primaryTools": [
+      "get_study",
+      "list_participants",
+      "create_participants"
+    ]
   }
 }

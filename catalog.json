@@ -71,6 +71,54 @@
       "documentation": "https://docs.userintuition.ai/skills/field-a-panel"
     },
     {
+      "name": "interview-cancellations",
+      "description": "Use when the user wants to understand why subscribers or members cancelled, churned, downgraded, or paused, run a churn or cancellation interview study, or talk to people who just cancelled, using subscription data from Stripe, a billing system, or an export.",
+      "tools": [
+        "get_study",
+        "list_participants",
+        "create_participants"
+      ],
+      "sha256": "24d374d12a9fc9db1f0ca6841beb1e71ec0de148d3c41da9a97f4b2494f00b43",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-cancellations/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/interview-cancellations"
+    },
+    {
+      "name": "interview-lapsed-customers",
+      "description": "Use when the user wants to understand why customers stopped buying, did not reorder, switched brands, or went quiet, interview lapsed or one-time buyers, or win back customers, using order history from Shopify, a store, a CRM, or a customer export.",
+      "tools": [
+        "get_study",
+        "list_participants",
+        "create_participants"
+      ],
+      "sha256": "2416714ca1b43034bd353285a53b0d0e0df805f8628a789ecda92aad11d82ae9",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-lapsed-customers/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/interview-lapsed-customers"
+    },
+    {
+      "name": "interview-recent-buyers",
+      "description": "Use when the user wants to interview recent buyers or new customers, understand why people bought, what the shopper trip or purchase decision looked like, what nearly stopped the order, or how a first order, product, or pack is landing, using orders from Shopify or another store.",
+      "tools": [
+        "get_study",
+        "list_participants",
+        "create_participants"
+      ],
+      "sha256": "e78dcf2820581834ee8feb66352b269de09cbf1c7fc94490c61469fbd360dafb",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-recent-buyers/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/interview-recent-buyers"
+    },
+    {
+      "name": "investigate-drop-off",
+      "description": "Use when the user wants to understand why people drop off, abandon a cart or checkout, fail to finish signup or onboarding, or stop using a feature, and wants to interview the people behind a funnel or analytics drop-off from PostHog, Mixpanel, Amplitude, or another analytics tool.",
+      "tools": [
+        "get_study",
+        "list_participants",
+        "create_participants"
+      ],
+      "sha256": "1cf0c769c430ae7a7c207afd44aac85715738c648cd8ce02a6cc1fb24badae06",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/investigate-drop-off/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/investigate-drop-off"
+    },
+    {
       "name": "invite-your-own-participants",
       "description": "Use when the user wants to add, invite, update, or reward their own participants in a BYOP study.",
       "tools": [
@@ -122,6 +170,18 @@
       "documentation": "https://docs.userintuition.ai/skills/run-a-concept-test"
     },
     {
+      "name": "run-win-loss",
+      "description": "Use when the user wants to run win-loss interviews, understand why deals were won or lost, interview buyers after a decision, or learn why prospects chose a competitor, using closed deals from HubSpot, Salesforce, or another CRM.",
+      "tools": [
+        "get_study",
+        "list_participants",
+        "create_participants"
+      ],
+      "sha256": "ef26b0dfbe28f4e74644eb4e26126d1d6e139637237f363cf4ed393037ed16b1",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/run-win-loss/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/run-win-loss"
+    },
+    {
       "name": "search-research",
       "description": "Use when the user wants to find existing User Intuition findings or participant responses across authorized studies before deciding whether more qualitative research is needed.",
       "tools": [
@@ -142,7 +202,7 @@
         "upload_research_source",
         "chat_research_session"
       ],
-      "sha256": "9779134a5ca702488e196f33253931152d2f4bdcea014bd7d8ff47912acdf150",
+      "sha256": "cd5c6b56e984dcca5b345e09f3779df774894bf69ca6a4102c63eda1204f4703",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/user-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/user-research"
     }

@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const skillsRoot = join(root, 'plugins', 'user-intuition-research', 'skills');
 const continuityPath = join(root, 'plugins', 'user-intuition-research', 'references', 'approval-continuity.md');
+const cohortPolicyPath = join(root, 'plugins', 'user-intuition-research', 'references', 'cohort-invite-policy.md');
 
 const expectedSkills = [
   'analyze-completed-study',
@@ -12,10 +13,15 @@ const expectedSkills = [
   'curate-interview-quality',
   'design-screeners',
   'field-a-panel',
+  'interview-cancellations',
+  'interview-lapsed-customers',
+  'interview-recent-buyers',
+  'investigate-drop-off',
   'invite-your-own-participants',
   'monitor-fielding',
   'retrieve-study-results',
   'run-a-concept-test',
+  'run-win-loss',
   'search-research',
   'user-research',
 ];
@@ -83,6 +89,18 @@ for (const rule of [
 ]) {
   if (!rule.test(continuity)) errors.push(`approval-continuity is missing required guidance: ${rule.source}`);
 }
+const cohortPolicy = readFileSync(cohortPolicyPath, 'utf8');
+for (const rule of [
+  /not an automatic trigger/i,
+  /default is 25 per\s+batch/i,
+  /at most 100 per request/i,
+  /approve the exact batch and cap/i,
+  /opted out of research or marketing contact/i,
+  /Never set up a\s+recurring schedule/i,
+]) {
+  if (!rule.test(cohortPolicy)) errors.push(`cohort-invite-policy is missing required guidance: ${rule.source}`);
+}
+const cohortSkills = ['interview-cancellations',  'interview-lapsed-customers',  'interview-recent-buyers',  'investigate-drop-off',  'run-win-loss'];
 const actualSkills = readdirSync(skillsRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
@@ -104,6 +122,12 @@ for (const name of [
 ]) {
   if (!/approval-continuity\.md/.test(bodies[name] ?? '')) {
     errors.push(`${name} does not load the shared approval-continuity policy`);
+  }
+}
+
+for (const name of cohortSkills) {
+  for (const rule of [/cohort-invite-policy\.md/, /approval-continuity\.md/, /`create_participants`/, /`create-study-from-brief`/, /exact batch and cap/]) {
+    if (!rule.test(bodies[name] ?? '')) errors.push(`${name} is missing required guidance: ${rule.source}`);
   }
 }
 
