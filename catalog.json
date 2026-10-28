@@ -133,6 +133,18 @@
       "sha256": "3addb2419b316ade2e689f0bb62cbb14967d241fed130bae5c3160567216176e",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/search-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/search-research"
+    },
+    {
+      "name": "user-research",
+      "description": "Use when the user wants to plan user or customer interviews, write a discussion guide or interview guide, design a screener, decide what to ask customers, synthesize interview transcripts, call notes, open-ended survey answers, reviews, or support tickets into themes, talk to customers or shoppers, test a concept, packaging, claim, or message, understand why people buy, switch brands, or churn, or run AI-moderated interviews with real people.",
+      "tools": [
+        "create_research_session",
+        "upload_research_source",
+        "chat_research_session"
+      ],
+      "sha256": "9779134a5ca702488e196f33253931152d2f4bdcea014bd7d8ff47912acdf150",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/user-research/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/user-research"
     }
   ]
 }

@@ -17,6 +17,7 @@ const expectedSkills = [
   'retrieve-study-results',
   'run-a-concept-test',
   'search-research',
+  'user-research',
 ];
 
 const removedReferences = [
@@ -28,6 +29,16 @@ const removedReferences = [
 ];
 
 const requiredGuidance = {
+  'user-research': [
+    /no account/i,
+    /behavior to reasoning to emotion or identity/i,
+    /\*\*X of Y sources\*\*/,
+    /never invent, merge, or tidy a quote/i,
+    /userintuition\.ai\/methodology\//,
+    /userintuition\.ai\/pricing\//,
+    /`create-study-from-brief`/,
+    /4M\+ consumer panel, B2B audiences recruited to order/,
+  ],
   'create-study-from-brief': [
     /voice interview in English with Elliot/i,
     /complete persisted study plan/i,
@@ -122,4 +133,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log('Skills validation OK: 10 workflows and required safeguards are present.');
+console.log(`Skills validation OK: ${actualSkills.length} workflows and required safeguards are present.`);

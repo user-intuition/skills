@@ -81,5 +81,13 @@
       "get_study_report",
       "get_interview"
     ]
+  },
+  "user-research": {
+    "primaryTools": [
+      "create_research_session",
+      "upload_research_source",
+      "chat_research_session"
+    ],
+    "requiresAccount": false
   }
 }

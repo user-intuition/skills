@@ -41,6 +41,7 @@ with `USERINTUITION_API_KEY` set (get a key from your [dashboard](https://app.us
 
 | Skill | Outcome |
 |-------|---------|
+| `user-research` | Plan a study or synthesize research you already have, no account needed; then field it with real people |
 | `create-study-from-brief` | Turn a research brief into a launch-ready interview study |
 | `design-screeners` | Recruit exactly the right respondents — panel and custom screeners, done safely |
 | `field-a-panel` | Recruit N respondents from the panel, with cost approved before any spend |
@@ -52,7 +53,7 @@ with `USERINTUITION_API_KEY` set (get a key from your [dashboard](https://app.us
 | `retrieve-study-results` | Read an existing report and follow source references without regeneration |
 | `search-research` | Find authorized prior evidence and inspect coverage and sources |
 
-The original eight workflows retain their validated MCP behavior. Retrieval and search use current tool/schema discovery; illustrative B2/C1 adapters still require release verification. Check any named tool yourself:
+The original eight fielding and analysis workflows retain their validated MCP behavior. Retrieval and search use current tool/schema discovery; illustrative B2/C1 adapters still require release verification. Check any named tool yourself:
 
 ```bash
 npx -y @userintuition-ai/mcp describe create_study
