@@ -1,8 +1,27 @@
-# User Intuition Skills
+# Run real qualitative research from your AI agent
 
-Agent Skills for running customer research with [User Intuition](https://www.userintuition.ai) — create interview studies, design screeners, field panel recruits, and turn transcripts into stakeholder-ready findings.
+Ask your agent to run a concept test with 20 frozen-dinner buyers. It drafts the study, shows you the plan and the cost, and once you confirm, it fields AI-moderated interviews (typically 20–30 minutes) and returns findings with verbatim quotes.
+Interviews ladder 5–7 levels deep, from what people did to why it matters to them. Participants come from a vetted 4M+ consumer panel or from your own customers, by voice, chat or video in 80+ languages.
+No account yet? Ask for help with any research question: the `user-research` skill plans the study or synthesizes research you already have, then fields it with real people when you're ready.
 
-The plugin bundles the hosted [User Intuition MCP server](https://docs.userintuition.ai/mcp-server/overview) for the *tools* and the skills for the *play*: the workflow, guardrails, and order of operations that make research runs reproducible.
+These are Agent Skills for running qualitative research with [User Intuition](https://www.userintuition.ai): create interview studies, design screeners, field panel recruits, and turn transcripts into stakeholder-ready findings. The plugin bundles the hosted [User Intuition MCP server](https://docs.userintuition.ai/mcp-server/overview) for the *tools* and the skills for the *play*: the workflow, guardrails, and order of operations that make research runs reproducible.
+
+**Works with:** Claude Code (plugin), Claude Desktop and claude.ai (connector and skill ZIPs), ChatGPT (connector), Codex, Cursor, and any agent that reads Agent Skills.
+
+**Guides:** [Set up User Intuition in Claude](https://www.userintuition.ai/reference-guides/claude-mcp-customer-research-setup/) · [Skills docs](https://docs.userintuition.ai/skills/overview) · [How quality is controlled](https://www.userintuition.ai/quality/) · [Pricing](https://www.userintuition.ai/pricing/)
+
+## Example run
+
+This is the shape of a run. The prompt is illustrative; the findings come from the public [Walmart shopper study](https://www.userintuition.ai/preview/).
+
+1. **Prompt.** "Find out where Walmart shoppers get stuck on a trip, and whether it changes whether they come back."
+2. **Saved plan.** The agent drafts the study from the brief (audience, screener, discussion guide) and shows you the plan before anything is created.
+3. **Estimate.** For a panel study it gets a quote and stops. Nothing launches, and nothing is spent, until you approve the plan and the quote. The cost depends on audience and size; see [pricing](https://www.userintuition.ai/pricing/).
+4. **Findings excerpt.** From 43 interviewed shoppers, each finding linked back to what participants said:
+   - 34 of 43 hit at least one obstacle on their trip.
+   - 36 of 43 will shop there again.
+   - The shelf carried 20 of 51 coded friction moments, more than any other stage.
+   - 19 of 43 named the shelf as the moment that shaped the trip.
 
 ## Install
 
@@ -79,15 +98,9 @@ npx -y @userintuition-ai/mcp describe create_study
 
 [Catalog](https://raw.githubusercontent.com/user-intuition/skills/main/catalog.json): names, descriptions, raw file URLs, documentation URLs, and SHA-256 digests. Each skill is independently fetchable; loading the catalog does not require loading every workflow.
 
-## Maintaining docs and discovery
+## Contributing
 
-The skill files in this repository are canonical. After editing, run `npm run catalog`, then `npm test`. Commit the source before exporting pinned docs and website discovery:
-
-```sh
-node scripts/export-discovery.mjs --docs /path/to/userintuition-docs --website /path/to/ui-astro
-```
-
-The exporter generates individual documentation pages, the library index, a source manifest, and website discovery entries. It preserves the existing umbrella skill. Do not independently edit generated pages.
+Maintainer workflow (catalog, tests, docs and website export) is in [CONTRIBUTING.md](CONTRIBUTING.md). Release notes are in [CHANGELOG.md](CHANGELOG.md).
 
 ## Docs
 
