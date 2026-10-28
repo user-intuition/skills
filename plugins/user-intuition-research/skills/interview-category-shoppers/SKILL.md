@@ -1,6 +1,7 @@
 ---
 name: interview-category-shoppers
 description: Use when the user wants to interview shoppers or buyers of a product category or brand, such as frozen pizza buyers, coffee drinkers, pet food buyers, or skincare shoppers, understand how consumers choose in a category, or run consumer insights or shopper research for a CPG brand or retailer, recruiting consumers who match a buying profile.
+allowed-tools: Read
 ---
 
 When the user wants to hear from category or brand shoppers:

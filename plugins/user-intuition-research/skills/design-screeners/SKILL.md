@@ -1,6 +1,7 @@
 ---
 name: design-screeners
 description: Use when the user wants to screen participants, define qualification criteria, or target a Panel study.
+allowed-tools: Read
 ---
 
 When the user asks to change screening:

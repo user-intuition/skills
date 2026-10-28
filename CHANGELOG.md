@@ -2,6 +2,10 @@
 
 Versions follow the plugin version in `plugins/user-intuition-research/.claude-plugin/plugin.json`.
 
+## 1.6.1: allowed-tools in every skill
+
+- Every `SKILL.md` declares `allowed-tools: Read`, which directories such as claudskills.com require. In Claude Code this pre-approves only reading the skill's own reference files; every MCP action, including paid launches, still asks for permission. `scripts/check-skills.mjs` fails if a skill names any other tool.
+
 ## 1.6.0: consumer insights and practice run (unreleased)
 
 - Consumer insights skills for CPG and retail: category and brand shoppers, brand switchers, shopper journey (path to purchase), and usage and attitudes, recruited from the consumer panel through behaviour-based screeners.

@@ -1,6 +1,7 @@
 ---
 name: map-shopper-journey
 description: Use when the user wants to map the shopper journey or path to purchase, understand a shopping trip in store or online, what happens at the shelf or on the product page, how shoppers build a list, substitute, or decide in the aisle, or run shopper marketing research for a brand or retailer.
+allowed-tools: Read
 ---
 
 When the user wants to map the shopper journey:

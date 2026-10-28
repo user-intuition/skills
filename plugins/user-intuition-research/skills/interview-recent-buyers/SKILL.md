@@ -1,6 +1,7 @@
 ---
 name: interview-recent-buyers
 description: Use when the user wants to interview recent buyers or new customers, understand why people bought, what the shopper trip or purchase decision looked like, what nearly stopped the order, or how a first order, product, or pack is landing, using orders from Shopify or another store, loyalty-card or retailer data, or a customer export.
+allowed-tools: Read
 ---
 
 When the user wants to hear from recent buyers:

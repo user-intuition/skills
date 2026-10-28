@@ -1,6 +1,7 @@
 ---
 name: interview-lapsed-customers
 description: Use when the user wants to understand why customers stopped buying, did not reorder, switched brands, or went quiet, interview lapsed or one-time buyers, or win back customers, using order history from Shopify, a store, a CRM, loyalty-card or retailer data, or a customer export.
+allowed-tools: Read
 ---
 
 When the user wants to hear from lapsed customers:

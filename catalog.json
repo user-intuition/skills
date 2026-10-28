@@ -13,7 +13,7 @@
         "queue_research_chat",
         "view_research_answer"
       ],
-      "sha256": "c4eec17d2ea1e71b9d82323cad2206fe4bae2cfe05cfcb2433539f81f309b458",
+      "sha256": "eff9104aa7712013ddfb5c3be5a082d7662daeb4bf9a9bd5356672297be9520b",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/analyze-completed-study/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/analyze-completed-study"
     },
@@ -27,7 +27,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "ddb2e896085c47db86266cd8fc2d914a9113c1298d9fc303a89b9e852c97e83e",
+      "sha256": "f866e038b93ca2446373af1df9a6f7fac25b3288216e8f7a3fe829dc2061467d",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/create-study-from-brief/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/create-study-from-brief"
     },
@@ -39,7 +39,7 @@
         "get_interview",
         "delete_interview"
       ],
-      "sha256": "59f144bc98e2ce6fa3b6228c70cac46b8781c7cf07d3392a11a4c0a99986abc5",
+      "sha256": "b79b5e8370d88e3d3e7d0f8543f5e7a893a5e3d6e8d0ae7c3447053a34102f56",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/curate-interview-quality/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/curate-interview-quality"
     },
@@ -50,7 +50,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "a522e46b01efb555dcf3bda7afd8bd327ab5b394a4f394ed9b2da98b3a8a2cdd",
+      "sha256": "a98e9ee4975650563bb758f30827fc7f2a7fb043d37fb6e36eb823a1026321fc",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/design-screeners/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/design-screeners"
     },
@@ -66,7 +66,7 @@
         "resume_study",
         "stop_study"
       ],
-      "sha256": "2e05d8bb2f4a9d6b9b21b5618a086a32bb6aaf504cccb548626b189e51bab2a4",
+      "sha256": "6b62618535e42a7e3db5a83d0acf307ff60db3585bc3d4a7faed97a9244c874c",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/field-a-panel/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/field-a-panel"
     },
@@ -80,7 +80,7 @@
         "estimate_panel",
         "launch_panel"
       ],
-      "sha256": "b7787da0b18c0efce4fff78c6cf42fccd99ef1539cbc46304fbfbe84ec12e733",
+      "sha256": "ad6cf51cc37f5a61687a09a7b8d137b1ac0348adc0b25a4e064e287b99b0c5bc",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-brand-switchers/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/interview-brand-switchers"
     },
@@ -92,7 +92,7 @@
         "list_participants",
         "create_participants"
       ],
-      "sha256": "bc95821c521bb216b383911c8b0736e4b59b65f93ba5bf98468a03fdfb0a8dad",
+      "sha256": "830789f0191bee14b51c0e3c0810ba78043013a0dbdabc65ab3c6ee9952c607a",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-cancellations/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/interview-cancellations"
     },
@@ -106,7 +106,7 @@
         "estimate_panel",
         "launch_panel"
       ],
-      "sha256": "5bb8a57b58230625a98dfd3d0f754e88b20e981df484a0541642c4fe16f5fb11",
+      "sha256": "284804e2aff99a708b68f9abdb8625dcfb44482e6c05a2e53781fec580ea237d",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-category-shoppers/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/interview-category-shoppers"
     },
@@ -118,7 +118,7 @@
         "list_participants",
         "create_participants"
       ],
-      "sha256": "5beaf5f9903a543a71cd998f595ea2fe89bef2ed550f4170a1aad2f1907d1306",
+      "sha256": "0c8a897ba5fd7990ab65747fde33c38b6f1a441f1e25f128f408d0edf8a9fcd2",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-lapsed-customers/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/interview-lapsed-customers"
     },
@@ -130,7 +130,7 @@
         "list_participants",
         "create_participants"
       ],
-      "sha256": "3d30573f44d1d9079a4475a1c9fd3965665d3eeb4ebccfead96d82d71ed05d5b",
+      "sha256": "69d89bbe7b8fa40a567293ae7a06a763a786d5667529979b4c1749b8cc6627ac",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-recent-buyers/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/interview-recent-buyers"
     },
@@ -142,7 +142,7 @@
         "list_participants",
         "create_participants"
       ],
-      "sha256": "03edd99edad2499e2aa9969bab695a29698f9cca20943d7e92a7950ef79a237e",
+      "sha256": "44faaa888fe6b5ee88f8e5661a04b092f186d280f495833b7701902f8ff4ff41",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/investigate-drop-off/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/investigate-drop-off"
     },
@@ -157,7 +157,7 @@
         "update_participant",
         "send_participant_reward"
       ],
-      "sha256": "9946e0dceea485de13a8633e84ac3f1ff479ca7d7817970fbc1fa2b06272002b",
+      "sha256": "5740e5fd8955399ba3b834b72dbced030e8e593aaf8cf96feb83a82ddc6a612b",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/invite-your-own-participants/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/invite-your-own-participants"
     },
@@ -171,7 +171,7 @@
         "estimate_panel",
         "launch_panel"
       ],
-      "sha256": "02c72271e569207d17e371492978a3e3c2c13ba1e55d19cc2859659298b2a675",
+      "sha256": "0d24e2cddb12079ff21f493e50ec5d3f27f53d64723e3bb7ae43b59ac5086c93",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/map-shopper-journey/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/map-shopper-journey"
     },
@@ -182,7 +182,7 @@
         "list_studies",
         "list_interviews"
       ],
-      "sha256": "b1ebc1a67fede393d63abf87bdd9600e10883895dee6d346ea92008dae32be18",
+      "sha256": "4881982ac19be6c45cb1e7988e426d435ad64a17e65e2ecb959f988e4544edf2",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/monitor-fielding/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/monitor-fielding"
     },
@@ -195,7 +195,7 @@
         "get_study_report",
         "get_interview"
       ],
-      "sha256": "010252ac4b8768a8d66f490f444dd24da1be2b7b2f35403e55d650bf866e1234",
+      "sha256": "13b3f3d90f54d111690cd3b59588674cd688fe3e447b54f08cdc4eeaf392b51e",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/retrieve-study-results/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/retrieve-study-results"
     },
@@ -207,7 +207,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "6a167e08165aaa5a27310ffc1107a64de3125ba5086d5da70d4eabada323229e",
+      "sha256": "1dfe0ff942f961dfe0f9642b62081cab5a244193c4f65999265ea0c3f27a9623",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/run-a-concept-test/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/run-a-concept-test"
     },
@@ -221,7 +221,7 @@
         "estimate_panel",
         "launch_panel"
       ],
-      "sha256": "7c050affea23b5c6ace05161bc82045675136add20de000105b7e62b34252618",
+      "sha256": "af53dbb58ec7da10b10359c2dfae50f82548fef3c56f3ffac4b17d119dee6fea",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/run-usage-and-attitudes/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/run-usage-and-attitudes"
     },
@@ -233,7 +233,7 @@
         "list_participants",
         "create_participants"
       ],
-      "sha256": "ea9e670d1dc90d7442aa66699a00d0e9fc252d6f087cd6ffa89a8cb4664a1806",
+      "sha256": "8f12db7b807815e66f489e5233ff1cfb9be362ffb71eff9a116320b9b91783d2",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/run-win-loss/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/run-win-loss"
     },
@@ -246,7 +246,7 @@
         "get_study_report",
         "get_interview"
       ],
-      "sha256": "3addb2419b316ade2e689f0bb62cbb14967d241fed130bae5c3160567216176e",
+      "sha256": "c1ea3a4f35e5c6442987ad92bbc2c54139ccc94064b406d2df6201b7ed0eb746",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/search-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/search-research"
     },
@@ -257,7 +257,7 @@
         "get_account",
         "list_organizations"
       ],
-      "sha256": "95574f29f1cd5379c3a59240cbcf53f7749b673e241ac9966fe2aef41b29699a",
+      "sha256": "331787bafa17276fd3334999b0154fde77b2aba42e6a7db235df8dada66c4aac",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/setup/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/setup"
     },
@@ -269,7 +269,7 @@
         "upload_research_source",
         "chat_research_session"
       ],
-      "sha256": "1cc93b832bc32e0ec3c6fa1d8d5167a9fd97cbb474e27d68aa07fc1f3e468d73",
+      "sha256": "a714252f44f5b4a8ff1169b5ad8c6f06f892a615615079b7761a57e7dc939c78",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/user-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/user-research"
     }

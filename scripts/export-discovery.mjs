@@ -10,7 +10,7 @@ const metadata=JSON.parse(readFileSync(join(root,'skill-metadata.json'),'utf8'))
 const entries=readdirSync(join(root,'plugins/user-intuition-research/skills')).sort().map(name=>{
  const path=`plugins/user-intuition-research/skills/${name}/SKILL.md`;
  const body=readFileSync(join(root,path),'utf8');
- const match=body.match(/^---\nname: ([^\n]+)\ndescription: ([^\n]+)\n---\n/);
+ const match=body.match(/^---\nname: ([^\n]+)\ndescription: ([^\n]+)\n(?:allowed-tools: [^\n]+\n)?---\n/);
  if(!match||match[1]!==name)throw Error(`Invalid frontmatter: ${name}`);
  const tools=metadata[name]?.primaryTools;
  if(!Array.isArray(tools))throw Error(`Missing tool metadata: ${name}`);

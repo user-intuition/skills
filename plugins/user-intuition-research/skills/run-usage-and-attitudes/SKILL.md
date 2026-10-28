@@ -1,6 +1,7 @@
 ---
 name: run-usage-and-attitudes
 description: Use when the user wants a usage and attitudes (U&A) study, to understand how and when consumers use a product or category, usage occasions, habits, needs, category perceptions, or brand repertoire, or to find unmet needs and white space for a consumer brand.
+allowed-tools: Read
 ---
 
 When the user wants a usage and attitudes study:

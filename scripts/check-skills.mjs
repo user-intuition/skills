@@ -193,6 +193,14 @@ if (JSON.stringify(relative) !== JSON.stringify(nestedCursor)) {
   errors.push(`${pluginDir}.cursor-plugin/plugin.json must match .cursor-plugin/plugin.json with paths relative to the plugin folder`);
 }
 
+// Directories such as claudskills.com require allowed-tools. In Claude Code it pre-approves tools,
+// so it may only name Read: every MCP action, paid ones above all, keeps its permission prompt.
+for (const name of actualSkills) {
+  const text = readFileSync(join(skillsRoot, name, 'SKILL.md'), 'utf8');
+  const allowed = text.match(/^---\n[\s\S]*?^allowed-tools: (.+)$[\s\S]*?^---$/m)?.[1];
+  if (allowed !== 'Read') errors.push(`${name} must declare exactly "allowed-tools: Read" (found ${allowed ?? 'none'})`);
+}
+
 if (errors.length) {
   console.error(`Skills validation failed:\n  - ${errors.join('\n  - ')}`);
   process.exit(1);

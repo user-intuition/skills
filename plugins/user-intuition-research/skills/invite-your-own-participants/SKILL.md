@@ -1,6 +1,7 @@
 ---
 name: invite-your-own-participants
 description: Use when the user wants to add, invite, update, or reward their own participants in a BYOP study.
+allowed-tools: Read
 ---
 
 When the user supplies participants:

@@ -1,6 +1,7 @@
 ---
 name: search-research
 description: Use when the user wants to find existing User Intuition findings or participant responses across authorized studies before deciding whether more qualitative research is needed.
+allowed-tools: Read
 ---
 
 1. Turn the user's information need into a query and identify at least one authorized `study_id`. Preserve any supplied date or content-type constraints; do not add filters without a reason grounded in the request.

@@ -1,6 +1,7 @@
 ---
 name: retrieve-study-results
 description: Use when the user wants to fetch an existing User Intuition study report, inspect its evidence coverage, or follow a finding or participant response to supporting interview evidence without regenerating analysis.
+allowed-tools: Read
 ---
 
 1. Use the supplied study ID. If only a name is supplied, resolve it with `list_studies` and disambiguate matches. Fetch `get_study` for audience and study context when needed.

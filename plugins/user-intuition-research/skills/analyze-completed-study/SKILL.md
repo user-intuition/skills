@@ -1,6 +1,7 @@
 ---
 name: analyze-completed-study
 description: Use when the user wants findings, themes, evidence, or a report from completed User Intuition interviews.
+allowed-tools: Read
 ---
 
 When the user asks for analysis:

@@ -1,6 +1,7 @@
 ---
 name: curate-interview-quality
 description: Use when the user wants to review interview quality or explicitly delete unusable interviews from one User Intuition study.
+allowed-tools: Read
 ---
 
 When the user asks to curate quality:

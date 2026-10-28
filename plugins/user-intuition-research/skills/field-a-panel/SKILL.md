@@ -1,6 +1,7 @@
 ---
 name: field-a-panel
 description: Use when the user wants to estimate, launch, pause, resume, or stop recruitment for a User Intuition Panel study.
+allowed-tools: Read
 ---
 
 When the user wants to field a Panel:
