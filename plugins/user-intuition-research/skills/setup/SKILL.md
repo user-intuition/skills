@@ -1,6 +1,7 @@
 ---
 name: setup
 description: Use right after User Intuition is installed or connected, or when the user asks how to get started, whether their User Intuition account is connected, or what User Intuition can do. Checks the connection, asks what they want to learn and from whom, and routes to the right workflow. Do not use for a specific research request that another User Intuition skill already covers.
+allowed-tools: Read
 ---
 
 # Get started with User Intuition

@@ -1,6 +1,7 @@
 ---
 name: interview-brand-switchers
 description: Use when the user wants to understand why shoppers switch brands, trade down to store brands or private label, stopped buying a brand, or chose a competitor, and wants to interview switchers or lapsed brand buyers recruited from a consumer panel rather than from their own customer list.
+allowed-tools: Read
 ---
 
 When the user wants to hear from brand switchers:

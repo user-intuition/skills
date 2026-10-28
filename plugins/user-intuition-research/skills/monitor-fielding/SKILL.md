@@ -1,6 +1,7 @@
 ---
 name: monitor-fielding
 description: Use when the user wants a read-only status snapshot of User Intuition studies or interviews.
+allowed-tools: Read
 ---
 
 When the user asks for fielding status:

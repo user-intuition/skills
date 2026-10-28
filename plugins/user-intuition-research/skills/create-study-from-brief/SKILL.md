@@ -1,6 +1,7 @@
 ---
 name: create-study-from-brief
 description: Use when the user wants to create a User Intuition interview study from a brief, goal, problem, or research idea.
+allowed-tools: Read
 ---
 
 When the user asks to create a study:

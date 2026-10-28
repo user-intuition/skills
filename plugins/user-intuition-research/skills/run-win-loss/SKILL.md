@@ -1,6 +1,7 @@
 ---
 name: run-win-loss
 description: Use when the user wants to run win-loss interviews, understand why deals were won or lost, interview buyers after a decision, or learn why prospects chose a competitor, using closed deals from HubSpot, Salesforce, or another CRM.
+allowed-tools: Read
 ---
 
 When the user wants win-loss interviews:

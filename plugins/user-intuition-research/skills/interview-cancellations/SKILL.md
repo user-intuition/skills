@@ -1,6 +1,7 @@
 ---
 name: interview-cancellations
 description: Use when the user wants to understand why subscribers or members cancelled, churned, downgraded, or paused, run a churn or cancellation interview study, or talk to people who just cancelled, using subscription data from Stripe, a billing system, or an export.
+allowed-tools: Read
 ---
 
 When the user wants to hear from people who cancelled:
