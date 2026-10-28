@@ -5,7 +5,7 @@ description: Use when the user wants to add, invite, update, or reward their own
 
 When the user supplies participants:
 
-Apply the shared [approval and workflow continuity policy](../../references/approval-continuity.md).
+Apply the shared [approval and workflow continuity policy](references/approval-continuity.md).
 
 1. Call `get_study` and verify `recruiting_method` is `byop` and `provisioning_status` is `provisioned`.
 2. Compare the study with any trusted checkpoint. If it matches an already approved plan, carry that approval forward. Otherwise return the complete current persisted study plan with its audience, screeners, concepts, and interview settings, obtain explicit approval of that exact version, and retain a new checkpoint. Approval to create or customize the study does not count.

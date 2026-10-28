@@ -5,6 +5,8 @@ import { fileURLToPath } from 'node:url';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const skillsRoot = join(root, 'plugins', 'user-intuition-research', 'skills');
 const continuityPath = join(root, 'plugins', 'user-intuition-research', 'references', 'approval-continuity.md');
+const consumerPolicyPath = join(root, 'plugins', 'user-intuition-research', 'references', 'consumer-panel-study.md');
+const cohortPolicyPath = join(root, 'plugins', 'user-intuition-research', 'references', 'cohort-invite-policy.md');
 
 const expectedSkills = [
   'analyze-completed-study',
@@ -12,11 +14,22 @@ const expectedSkills = [
   'curate-interview-quality',
   'design-screeners',
   'field-a-panel',
+  'interview-brand-switchers',
+  'interview-cancellations',
+  'interview-category-shoppers',
+  'interview-lapsed-customers',
+  'interview-recent-buyers',
+  'investigate-drop-off',
   'invite-your-own-participants',
+  'map-shopper-journey',
   'monitor-fielding',
   'retrieve-study-results',
   'run-a-concept-test',
+  'run-usage-and-attitudes',
+  'run-win-loss',
   'search-research',
+  'setup',
+  'user-research',
 ];
 
 const removedReferences = [
@@ -28,7 +41,21 @@ const removedReferences = [
 ];
 
 const requiredGuidance = {
+  'user-research': [
+    /no account/i,
+    /behavior to reasoning to emotion or identity/i,
+    /\*\*X of Y sources\*\*/,
+    /never invent, merge, or tidy a quote/i,
+    /userintuition\.ai\/methodology\//,
+    /userintuition\.ai\/pricing\//,
+    /`create-study-from-brief`/,
+    /4M\+ consumer panel or your own customers\. B2B audiences are recruited to order\./,
+  ],
   'create-study-from-brief': [
+    /\*\*Practice run, not findings\*\*/,
+    /Only if the user asks for more, offer a separate synthetic-respondents study/,
+    /may use account credits/,
+    /never mix its results into the real study's analysis/,
     /voice interview in English with Elliot/i,
     /complete persisted study plan/i,
     /exact plan version/i,
@@ -72,6 +99,29 @@ for (const rule of [
 ]) {
   if (!rule.test(continuity)) errors.push(`approval-continuity is missing required guidance: ${rule.source}`);
 }
+const cohortPolicy = readFileSync(cohortPolicyPath, 'utf8');
+for (const rule of [
+  /not an automatic trigger/i,
+  /default is 25 per\s+batch/i,
+  /at most 100 per request/i,
+  /approve the exact batch and cap/i,
+  /opted out of research or marketing contact/i,
+  /Never set up a\s+recurring schedule/i,
+]) {
+  if (!rule.test(cohortPolicy)) errors.push(`cohort-invite-policy is missing required guidance: ${rule.source}`);
+}
+const consumerPolicy = readFileSync(consumerPolicyPath, 'utf8');
+for (const rule of [
+  /vetted 4M\+ consumer panel/,
+  /never describe them as\s+part of the panel/,
+  /human review of\s+the saved plan and the complete quote/,
+  /Never invent findings, quotes, purchase data, market sizes, or product claims/,
+  /never infer it/i,
+]) {
+  if (!rule.test(consumerPolicy)) errors.push(`consumer-panel-study is missing required guidance: ${rule.source}`);
+}
+const consumerSkills = ['interview-brand-switchers',  'interview-category-shoppers',  'map-shopper-journey',  'run-usage-and-attitudes'];
+const cohortSkills = ['interview-cancellations',  'interview-lapsed-customers',  'interview-recent-buyers',  'investigate-drop-off',  'run-win-loss'];
 const actualSkills = readdirSync(skillsRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
@@ -93,6 +143,21 @@ for (const name of [
 ]) {
   if (!/approval-continuity\.md/.test(bodies[name] ?? '')) {
     errors.push(`${name} does not load the shared approval-continuity policy`);
+  }
+}
+
+for (const name of consumerSkills) {
+  for (const rule of [/consumer-panel-study\.md/, /approval-continuity\.md/, /`create-study-from-brief` \(Panel\)/, /`field-a-panel`/, /saved plan, then the complete quote/]) {
+    if (!rule.test(bodies[name] ?? '')) errors.push(`${name} is missing required guidance: ${rule.source}`);
+  }
+}
+if (!/Never write or invent product claims/.test(bodies['run-a-concept-test'] ?? '')) {
+  errors.push('run-a-concept-test is missing the no-invented-claims rule');
+}
+
+for (const name of cohortSkills) {
+  for (const rule of [/cohort-invite-policy\.md/, /approval-continuity\.md/, /`create_participants`/, /`create-study-from-brief`/, /exact batch and cap/]) {
+    if (!rule.test(bodies[name] ?? '')) errors.push(`${name} is missing required guidance: ${rule.source}`);
   }
 }
 
@@ -122,4 +187,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log('Skills validation OK: 10 workflows and required safeguards are present.');
+console.log(`Skills validation OK: ${actualSkills.length} workflows and required safeguards are present.`);

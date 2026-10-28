@@ -81,5 +81,90 @@
       "get_study_report",
       "get_interview"
     ]
+  },
+  "user-research": {
+    "primaryTools": [
+      "create_research_session",
+      "upload_research_source",
+      "chat_research_session"
+    ],
+    "requiresAccount": false
+  },
+  "interview-cancellations": {
+    "primaryTools": [
+      "get_study",
+      "list_participants",
+      "create_participants"
+    ]
+  },
+  "interview-lapsed-customers": {
+    "primaryTools": [
+      "get_study",
+      "list_participants",
+      "create_participants"
+    ]
+  },
+  "interview-recent-buyers": {
+    "primaryTools": [
+      "get_study",
+      "list_participants",
+      "create_participants"
+    ]
+  },
+  "investigate-drop-off": {
+    "primaryTools": [
+      "get_study",
+      "list_participants",
+      "create_participants"
+    ]
+  },
+  "run-win-loss": {
+    "primaryTools": [
+      "get_study",
+      "list_participants",
+      "create_participants"
+    ]
+  },
+  "setup": {
+    "primaryTools": [
+      "get_account",
+      "list_organizations"
+    ]
+  },
+  "interview-brand-switchers": {
+    "primaryTools": [
+      "create_study",
+      "customize_study",
+      "get_study",
+      "estimate_panel",
+      "launch_panel"
+    ]
+  },
+  "interview-category-shoppers": {
+    "primaryTools": [
+      "create_study",
+      "customize_study",
+      "get_study",
+      "estimate_panel",
+      "launch_panel"
+    ]
+  },
+  "map-shopper-journey": {
+    "primaryTools": [
+      "create_study",
+      "customize_study",
+      "get_study",
+      "estimate_panel",
+      "launch_panel"
+    ]
+  },
+  "run-usage-and-attitudes": {
+    "primaryTools": [
+      "create_study",
+      "customize_study",
+      "get_study",
+      "estimate_panel",
+      "launch_panel"
+    ]
   }
 }

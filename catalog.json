@@ -27,7 +27,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "790021e61de1e6fa1b5414316c5131711c2d840f1e209b2c33b158240d8d34c3",
+      "sha256": "ddb2e896085c47db86266cd8fc2d914a9113c1298d9fc303a89b9e852c97e83e",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/create-study-from-brief/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/create-study-from-brief"
     },
@@ -50,7 +50,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "f0c7da2205aadf125cf9f200ab0be6f9fb8c9290e43810404b42d790caeed5c8",
+      "sha256": "a522e46b01efb555dcf3bda7afd8bd327ab5b394a4f394ed9b2da98b3a8a2cdd",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/design-screeners/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/design-screeners"
     },
@@ -66,9 +66,85 @@
         "resume_study",
         "stop_study"
       ],
-      "sha256": "44c11cc483c14d7f2b7f6c47c1593713672d3dcca249043ed52df59042b6d1c7",
+      "sha256": "2e05d8bb2f4a9d6b9b21b5618a086a32bb6aaf504cccb548626b189e51bab2a4",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/field-a-panel/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/field-a-panel"
+    },
+    {
+      "name": "interview-brand-switchers",
+      "description": "Use when the user wants to understand why shoppers switch brands, trade down to store brands or private label, stopped buying a brand, or chose a competitor, and wants to interview switchers or lapsed brand buyers recruited from a consumer panel rather than from their own customer list.",
+      "tools": [
+        "create_study",
+        "customize_study",
+        "get_study",
+        "estimate_panel",
+        "launch_panel"
+      ],
+      "sha256": "b7787da0b18c0efce4fff78c6cf42fccd99ef1539cbc46304fbfbe84ec12e733",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-brand-switchers/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/interview-brand-switchers"
+    },
+    {
+      "name": "interview-cancellations",
+      "description": "Use when the user wants to understand why subscribers or members cancelled, churned, downgraded, or paused, run a churn or cancellation interview study, or talk to people who just cancelled, using subscription data from Stripe, a billing system, or an export.",
+      "tools": [
+        "get_study",
+        "list_participants",
+        "create_participants"
+      ],
+      "sha256": "bc95821c521bb216b383911c8b0736e4b59b65f93ba5bf98468a03fdfb0a8dad",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-cancellations/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/interview-cancellations"
+    },
+    {
+      "name": "interview-category-shoppers",
+      "description": "Use when the user wants to interview shoppers or buyers of a product category or brand, such as frozen pizza buyers, coffee drinkers, pet food buyers, or skincare shoppers, understand how consumers choose in a category, or run consumer insights or shopper research for a CPG brand or retailer, recruiting consumers who match a buying profile.",
+      "tools": [
+        "create_study",
+        "customize_study",
+        "get_study",
+        "estimate_panel",
+        "launch_panel"
+      ],
+      "sha256": "5bb8a57b58230625a98dfd3d0f754e88b20e981df484a0541642c4fe16f5fb11",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-category-shoppers/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/interview-category-shoppers"
+    },
+    {
+      "name": "interview-lapsed-customers",
+      "description": "Use when the user wants to understand why customers stopped buying, did not reorder, switched brands, or went quiet, interview lapsed or one-time buyers, or win back customers, using order history from Shopify, a store, a CRM, loyalty-card or retailer data, or a customer export.",
+      "tools": [
+        "get_study",
+        "list_participants",
+        "create_participants"
+      ],
+      "sha256": "5beaf5f9903a543a71cd998f595ea2fe89bef2ed550f4170a1aad2f1907d1306",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-lapsed-customers/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/interview-lapsed-customers"
+    },
+    {
+      "name": "interview-recent-buyers",
+      "description": "Use when the user wants to interview recent buyers or new customers, understand why people bought, what the shopper trip or purchase decision looked like, what nearly stopped the order, or how a first order, product, or pack is landing, using orders from Shopify or another store, loyalty-card or retailer data, or a customer export.",
+      "tools": [
+        "get_study",
+        "list_participants",
+        "create_participants"
+      ],
+      "sha256": "3d30573f44d1d9079a4475a1c9fd3965665d3eeb4ebccfead96d82d71ed05d5b",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/interview-recent-buyers/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/interview-recent-buyers"
+    },
+    {
+      "name": "investigate-drop-off",
+      "description": "Use when the user wants to understand why people drop off, abandon a cart or checkout, fail to finish signup or onboarding, or stop using a feature, and wants to interview the people behind a funnel or analytics drop-off from PostHog, Mixpanel, Amplitude, or another analytics tool.",
+      "tools": [
+        "get_study",
+        "list_participants",
+        "create_participants"
+      ],
+      "sha256": "03edd99edad2499e2aa9969bab695a29698f9cca20943d7e92a7950ef79a237e",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/investigate-drop-off/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/investigate-drop-off"
     },
     {
       "name": "invite-your-own-participants",
@@ -81,9 +157,23 @@
         "update_participant",
         "send_participant_reward"
       ],
-      "sha256": "db5e099170ae9dd4ed31b8bd38c47a02cb4c3551a5b92a1f69edc7528a5fccab",
+      "sha256": "9946e0dceea485de13a8633e84ac3f1ff479ca7d7817970fbc1fa2b06272002b",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/invite-your-own-participants/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/invite-your-own-participants"
+    },
+    {
+      "name": "map-shopper-journey",
+      "description": "Use when the user wants to map the shopper journey or path to purchase, understand a shopping trip in store or online, what happens at the shelf or on the product page, how shoppers build a list, substitute, or decide in the aisle, or run shopper marketing research for a brand or retailer.",
+      "tools": [
+        "create_study",
+        "customize_study",
+        "get_study",
+        "estimate_panel",
+        "launch_panel"
+      ],
+      "sha256": "02c72271e569207d17e371492978a3e3c2c13ba1e55d19cc2859659298b2a675",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/map-shopper-journey/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/map-shopper-journey"
     },
     {
       "name": "monitor-fielding",
@@ -111,15 +201,41 @@
     },
     {
       "name": "run-a-concept-test",
-      "description": "Use when the user wants participants to react to a concept, prototype, design, or landing page during a User Intuition interview.",
+      "description": "Use when the user wants participants to react to a concept, packaging or pack design, product claim, message, ad, prototype, design, or landing page during a User Intuition interview, including pack tests, claims tests, and concept screening for a consumer brand.",
       "tools": [
         "create_study",
         "customize_study",
         "get_study"
       ],
-      "sha256": "9c401ba7aba891fde2336de325c2cf65b1c03a594f78bc0186eb8ee7857bf4f7",
+      "sha256": "6a167e08165aaa5a27310ffc1107a64de3125ba5086d5da70d4eabada323229e",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/run-a-concept-test/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/run-a-concept-test"
+    },
+    {
+      "name": "run-usage-and-attitudes",
+      "description": "Use when the user wants a usage and attitudes (U&A) study, to understand how and when consumers use a product or category, usage occasions, habits, needs, category perceptions, or brand repertoire, or to find unmet needs and white space for a consumer brand.",
+      "tools": [
+        "create_study",
+        "customize_study",
+        "get_study",
+        "estimate_panel",
+        "launch_panel"
+      ],
+      "sha256": "7c050affea23b5c6ace05161bc82045675136add20de000105b7e62b34252618",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/run-usage-and-attitudes/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/run-usage-and-attitudes"
+    },
+    {
+      "name": "run-win-loss",
+      "description": "Use when the user wants to run win-loss interviews, understand why deals were won or lost, interview buyers after a decision, or learn why prospects chose a competitor, using closed deals from HubSpot, Salesforce, or another CRM.",
+      "tools": [
+        "get_study",
+        "list_participants",
+        "create_participants"
+      ],
+      "sha256": "ea9e670d1dc90d7442aa66699a00d0e9fc252d6f087cd6ffa89a8cb4664a1806",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/run-win-loss/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/run-win-loss"
     },
     {
       "name": "search-research",
@@ -133,6 +249,29 @@
       "sha256": "3addb2419b316ade2e689f0bb62cbb14967d241fed130bae5c3160567216176e",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/search-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/search-research"
+    },
+    {
+      "name": "setup",
+      "description": "Use right after User Intuition is installed or connected, or when the user asks how to get started, whether their User Intuition account is connected, or what User Intuition can do. Checks the connection, asks what they want to learn and from whom, and routes to the right workflow. Do not use for a specific research request that another User Intuition skill already covers.",
+      "tools": [
+        "get_account",
+        "list_organizations"
+      ],
+      "sha256": "95574f29f1cd5379c3a59240cbcf53f7749b673e241ac9966fe2aef41b29699a",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/setup/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/setup"
+    },
+    {
+      "name": "user-research",
+      "description": "Use when the user wants to plan user or customer interviews, write a discussion guide or interview guide, design a screener, decide what to ask customers, synthesize interview transcripts, call notes, open-ended survey answers, reviews, or support tickets into themes, talk to customers or shoppers, test a concept, packaging, claim, or message, run shopper research, a usage and attitudes (U&A) study, a path-to-purchase study, or consumer insights for a CPG brand or retailer, understand category buyers, why people buy, switch brands, or churn, or run AI-moderated interviews with real people.",
+      "tools": [
+        "create_research_session",
+        "upload_research_source",
+        "chat_research_session"
+      ],
+      "sha256": "1cc93b832bc32e0ec3c6fa1d8d5167a9fd97cbb474e27d68aa07fc1f3e468d73",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/user-research/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/user-research"
     }
   ]
 }
