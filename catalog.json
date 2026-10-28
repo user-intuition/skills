@@ -142,7 +142,7 @@
         "upload_research_source",
         "chat_research_session"
       ],
-      "sha256": "9779134a5ca702488e196f33253931152d2f4bdcea014bd7d8ff47912acdf150",
+      "sha256": "d9642934342405fb496b8564345941a0274c51fe3fbf2453cf9c45c438fd8f6b",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/user-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/user-research"
     }
