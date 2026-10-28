@@ -20,6 +20,15 @@ node scripts/export-discovery.mjs --docs /path/to/userintuition-docs --website /
 
 The exporter generates individual documentation pages, the library index, a source manifest, and website discovery entries. It preserves the existing umbrella skill. Do not independently edit generated pages.
 
+## Automated sync
+
+Two workflows keep the copies outside this repo in step with it:
+
+- **Docs and website** (`.github/workflows/sync-discovery.yml`): after skill files change on `main`, it runs the exporter above and opens or updates one PR in `Pen-and-Paper-AI/userintuition-docs` and one in `Pen-and-Paper-AI/userintuition-website`, on the branch `sync/user-intuition-skills`. Merge them as usual. Needs the `DISCOVERY_SYNC_TOKEN` secret, a token that can push branches and open PRs in both repos. It can also be run by hand from the Actions tab.
+- **ClawHub** (`.github/workflows/publish-clawhub.yml`): on a version tag, it publishes the skills listed in `clawhub-skills.txt` as that version. The tag must match the plugin version. Needs the `CLAWHUB_TOKEN` secret (`clawhub token` prints it after `clawhub login`).
+
+Directories that read this repo directly (skills.sh, claudemarketplaces.com, mcpmarket, cursor.directory on re-scan) need no sync. The ChatGPT/Codex package has its own sync script in the MCP server repo.
+
 ## Build the Desktop ZIPs
 
 ```sh

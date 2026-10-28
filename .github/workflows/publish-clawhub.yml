@@ -1,0 +1,42 @@
+name: Publish skills to ClawHub
+
+# On a version tag (v*), publish the skills listed in clawhub-skills.txt to
+# ClawHub as that version. ClawHub scans each upload before it goes public.
+#
+# Needs the CLAWHUB_TOKEN secret: after `clawhub login`, `clawhub token` prints it.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm test
+      - run: npm install -g clawhub@0.24.1
+      - name: Publish
+        env:
+          CLAWHUB_TOKEN: ${{ secrets.CLAWHUB_TOKEN }}
+        run: |
+          version=$(node -p "require('./plugins/user-intuition-research/.claude-plugin/plugin.json').version")
+          if [ "${GITHUB_REF_TYPE}" = tag ] && [ "${GITHUB_REF_NAME}" != "v${version}" ]; then
+            echo "Tag ${GITHUB_REF_NAME} does not match plugin version ${version}"
+            exit 1
+          fi
+          clawhub login --token "$CLAWHUB_TOKEN"
+          grep -v '^#' clawhub-skills.txt | while read -r name slug; do
+            [ -n "$name" ] || continue
+            path="plugins/user-intuition-research/skills/${name}"
+            clawhub skill publish "$path" --slug "$slug" --version "$version" \
+              --changelog "user-intuition/skills ${GITHUB_REF_NAME}" \
+              --source-repo "$GITHUB_REPOSITORY" --source-commit "$GITHUB_SHA" \
+              --source-ref "$GITHUB_REF_NAME" --source-path "$path"
+          done
