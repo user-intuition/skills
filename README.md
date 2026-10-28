@@ -6,16 +6,22 @@ The plugin bundles the hosted [User Intuition MCP server](https://docs.userintui
 
 ## Install
 
-### Claude Code (plugin marketplace)
+Every surface uses the same hosted MCP server (`https://mcp.userintuition.ai/mcp`, browser sign-in) and the same skill files. After installing, ask your agent: **"Help me get started with User Intuition."** The `setup` skill checks the connection and routes you to the right workflow.
 
-```
-/plugin marketplace add user-intuition/skills
-/plugin install user-intuition-research@user-intuition
-```
+| Agent | Skills | MCP connection |
+|-------|--------|----------------|
+| **Claude Code** | `/plugin marketplace add user-intuition/skills`, then `/plugin install user-intuition-research@user-intuition` | Bundled with the plugin. Run `/mcp`, select `user-intuition`, and sign in. |
+| **Claude Desktop / claude.ai** | Download a skill ZIP from [Releases](https://github.com/user-intuition/skills/releases) and upload it in Settings → Capabilities → Skills. One ZIP per skill; the bundle ZIP holds all of them. | Settings → Connectors → add a custom connector with `https://mcp.userintuition.ai/mcp`. |
+| **Codex** | `npx skills add user-intuition/skills -a codex` | `codex mcp add user-intuition --url https://mcp.userintuition.ai/mcp`, then `codex mcp login user-intuition`. |
+| **Cursor** | Install the plugin defined in [`.cursor-plugin/plugin.json`](.cursor-plugin/plugin.json), or `npx skills add user-intuition/skills -a cursor` | Bundled with the plugin, or add `https://mcp.userintuition.ai/mcp` under Settings → MCP. Sign in when prompted. |
+| **ChatGPT** | Skills ship inside the User Intuition app. | Settings → Apps & Connectors → User Intuition, then sign in. |
+| **Any other agent** | `npx skills add user-intuition/skills` (pick your agent when asked, or pass `-a <agent>`) | Add `https://mcp.userintuition.ai/mcp` as a remote MCP server in your client. |
 
-### Any agent (raw files)
+Install a single skill with `npx skills add user-intuition/skills -s create-study-from-brief`. To build the Desktop ZIPs yourself, run `node scripts/build-desktop-zip.mjs` (output in `dist/`).
 
-Each skill is a standalone Markdown file under `plugins/user-intuition-research/skills/<name>/SKILL.md`. Claude Code discovers skills as one directory per skill — copy any of them to `~/.claude/skills/<name>/SKILL.md` — or tell your agent:
+### Raw files
+
+Each skill is a standalone Markdown file under `plugins/user-intuition-research/skills/<name>/SKILL.md`. You can also tell your agent:
 
 > Fetch https://raw.githubusercontent.com/user-intuition/skills/main/catalog.json, select the workflow needed for the task, and fetch its raw `SKILL.md`. Install it in the skill directory supported by your agent client.
 
