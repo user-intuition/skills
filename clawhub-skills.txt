@@ -1,0 +1,4 @@
+# Skills published to ClawHub by .github/workflows/publish-clawhub.yml.
+# <skill folder> <ClawHub slug>
+user-research user-research
+setup setup
