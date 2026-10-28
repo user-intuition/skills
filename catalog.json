@@ -195,6 +195,17 @@
       "documentation": "https://docs.userintuition.ai/skills/search-research"
     },
     {
+      "name": "setup",
+      "description": "Use right after User Intuition is installed or connected, or when the user asks how to get started, whether their User Intuition account is connected, or what User Intuition can do. Checks the connection, asks what they want to learn and from whom, and routes to the right workflow. Do not use for a specific research request that another User Intuition skill already covers.",
+      "tools": [
+        "get_account",
+        "list_organizations"
+      ],
+      "sha256": "de9ae3f12979f051e0c54787a49981c4f821435ea4f0dcf244c5fa80a2b66056",
+      "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/setup/SKILL.md",
+      "documentation": "https://docs.userintuition.ai/skills/setup"
+    },
+    {
       "name": "user-research",
       "description": "Use when the user wants to plan user or customer interviews, write a discussion guide or interview guide, design a screener, decide what to ask customers, synthesize interview transcripts, call notes, open-ended survey answers, reviews, or support tickets into themes, talk to customers or shoppers, test a concept, packaging, claim, or message, understand why people buy, switch brands, or churn, or run AI-moderated interviews with real people.",
       "tools": [

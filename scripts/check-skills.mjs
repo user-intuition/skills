@@ -23,6 +23,7 @@ const expectedSkills = [
   'run-a-concept-test',
   'run-win-loss',
   'search-research',
+  'setup',
   'user-research',
 ];
 

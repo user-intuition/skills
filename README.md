@@ -47,6 +47,7 @@ with `USERINTUITION_API_KEY` set (get a key from your [dashboard](https://app.us
 
 | Skill | Outcome |
 |-------|---------|
+| `setup` | Check the connection, ask what you want to learn, and route to the right workflow |
 | `user-research` | Plan a study or synthesize research you already have, no account needed; then field it with real people |
 | `interview-recent-buyers` | Interview people who just bought, from Shopify or any store's orders |
 | `interview-lapsed-customers` | Find customers who stopped buying and hear why |

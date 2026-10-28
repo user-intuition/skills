@@ -43,11 +43,13 @@ Restate what they want in a sentence or two, then hand off:
 
 | They want to | Use |
 |---|---|
+| Draft a study plan, or make sense of transcripts, notes, or reviews they already have | `user-research` |
 | Turn a goal or brief into an interview study | `create-study-from-brief` |
 | Show a concept, packaging, prototype, or landing page | `run-a-concept-test` |
 | Qualify exactly the right people | `design-screeners` |
 | Recruit people from the panel | `field-a-panel` |
 | Interview their own customers or users | `invite-your-own-participants` |
+| Interview recent buyers, lapsed customers, cancellations, closed deals, or a funnel drop-off | `interview-recent-buyers`, `interview-lapsed-customers`, `interview-cancellations`, `run-win-loss`, `investigate-drop-off` |
 | Check progress on studies that are fielding | `monitor-fielding` |
 | Get findings from completed interviews | `analyze-completed-study` |
 | Read an existing report and its sources | `retrieve-study-results` |

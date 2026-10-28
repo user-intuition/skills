@@ -124,5 +124,11 @@
       "list_participants",
       "create_participants"
     ]
+  },
+  "setup": {
+    "primaryTools": [
+      "get_account",
+      "list_organizations"
+    ]
   }
 }
