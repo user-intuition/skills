@@ -182,6 +182,17 @@ for (const [name, rules] of Object.entries(requiredGuidance)) {
   }
 }
 
+// cursor.directory scans a plugin folder only when it has its own .cursor-plugin/plugin.json,
+// so the folder carries a copy of the root manifest with paths relative to itself.
+const pluginDir = 'plugins/user-intuition-research/';
+const rootCursor = JSON.parse(readFileSync(join(root, '.cursor-plugin', 'plugin.json'), 'utf8'));
+const nestedCursor = JSON.parse(readFileSync(join(root, pluginDir, '.cursor-plugin', 'plugin.json'), 'utf8'));
+const relative = Object.fromEntries(Object.entries(rootCursor).map(([key, value]) =>
+  [key, ['logo', 'skills', 'mcpServers'].includes(key) ? value.replace(pluginDir, '') : value]));
+if (JSON.stringify(relative) !== JSON.stringify(nestedCursor)) {
+  errors.push(`${pluginDir}.cursor-plugin/plugin.json must match .cursor-plugin/plugin.json with paths relative to the plugin folder`);
+}
+
 if (errors.length) {
   console.error(`Skills validation failed:\n  - ${errors.join('\n  - ')}`);
   process.exit(1);
