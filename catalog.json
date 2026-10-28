@@ -27,7 +27,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "790021e61de1e6fa1b5414316c5131711c2d840f1e209b2c33b158240d8d34c3",
+      "sha256": "84d29529eff352d823e3c82a6a8e22903ff599062cd1a8a369bfd14f1218f373",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/create-study-from-brief/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/create-study-from-brief"
     },
@@ -269,7 +269,7 @@
         "upload_research_source",
         "chat_research_session"
       ],
-      "sha256": "fef283931b0f0a31fc285b2b6e9abbc600d76f766cafd48ffc5817aeb2680b54",
+      "sha256": "1cc93b832bc32e0ec3c6fa1d8d5167a9fd97cbb474e27d68aa07fc1f3e468d73",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/user-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/user-research"
     }

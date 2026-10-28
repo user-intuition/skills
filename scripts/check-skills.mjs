@@ -52,6 +52,10 @@ const requiredGuidance = {
     /4M\+ consumer panel or your own customers\. B2B audiences are recruited to order\./,
   ],
   'create-study-from-brief': [
+    /\*\*Practice run, not findings\*\*/,
+    /Only if the user asks for more, offer a separate synthetic-respondents study/,
+    /may use account credits/,
+    /never mix its results into the real study's analysis/,
     /voice interview in English with Elliot/i,
     /complete persisted study plan/i,
     /exact plan version/i,

@@ -49,7 +49,7 @@ Offer this once, at the natural hand-off (a finished plan, or a synthesis that e
 
 If they accept, this needs the User Intuition MCP connection. Then hand off:
 
-- New study from the plan or brief → `create-study-from-brief` (pass the plan as the brief; the platform builds its own interview from it).
+- New study from the plan or brief → `create-study-from-brief` (pass the plan as the brief; the platform builds its own interview from it, and you can do a practice run of the guide before approving it).
 - Screener changes → `design-screeners`.
 - Panel recruiting → `field-a-panel`. Their own customers → `invite-your-own-participants`.
 - Concept, packaging, claim, or prototype → `run-a-concept-test`.
