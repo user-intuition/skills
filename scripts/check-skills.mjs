@@ -44,7 +44,7 @@ const requiredGuidance = {
     /userintuition\.ai\/methodology\//,
     /userintuition\.ai\/pricing\//,
     /`create-study-from-brief`/,
-    /4M\+ consumer panel, B2B audiences recruited to order/,
+    /4M\+ consumer panel or your own customers\. B2B audiences are recruited to order\./,
   ],
   'create-study-from-brief': [
     /voice interview in English with Elliot/i,
