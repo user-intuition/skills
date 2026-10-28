@@ -15,12 +15,12 @@ These are Agent Skills for running qualitative research with [User Intuition](ht
 This is the shape of a run. The prompt is illustrative; the findings come from the public [Walmart shopper study](https://www.userintuition.ai/preview/).
 
 1. **Prompt.** "Find out where Walmart shoppers get stuck on a trip, and whether it changes whether they come back."
-2. **Saved plan.** The agent drafts the study from the brief (audience, screener, discussion guide) and shows you the plan before anything is created.
+2. **Saved plan.** The agent drafts the study from the brief (audience, screener, discussion guide) and shows you the saved plan before anything is fielded.
 3. **Estimate.** For a panel study it gets a quote and stops. Nothing launches, and nothing is spent, until you approve the plan and the quote. The cost depends on audience and size; see [pricing](https://www.userintuition.ai/pricing/).
 4. **Findings excerpt.** From 43 interviewed shoppers, each finding linked back to what participants said:
    - 34 of 43 hit at least one obstacle on their trip.
    - 36 of 43 will shop there again.
-   - The shelf carried 20 of 51 coded friction moments, more than any other stage.
+   - The shelf carried 20 of 51 friction moments.
    - 19 of 43 named the shelf as the moment that shaped the trip.
 
 ## Install
