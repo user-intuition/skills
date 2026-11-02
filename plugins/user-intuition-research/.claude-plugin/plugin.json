@@ -1,6 +1,6 @@
 {
   "name": "user-intuition-research",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "Plan interview studies and synthesize research you already have, no account needed; then run AI-moderated interviews with real people, retrieve source-linked results, and search prior evidence with User Intuition.",
   "author": {
     "name": "User Intuition",
@@ -9,7 +9,7 @@
   },
   "homepage": "https://docs.userintuition.ai/skills/overview",
   "repository": "https://github.com/user-intuition/skills",
-  "icon": ".claude-plugin/icon.svg",
+  "icon": "./assets/logo.png",
   "privacyPolicyUrl": "https://www.userintuition.ai/privacy-policy/",
   "license": "MIT",
   "keywords": [
