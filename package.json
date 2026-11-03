@@ -1,5 +1,6 @@
 {
   "name": "user-intuition-skills",
+  "version": "1.6.3",
   "private": true,
   "type": "module",
   "scripts": {

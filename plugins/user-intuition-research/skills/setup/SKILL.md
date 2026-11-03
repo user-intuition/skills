@@ -1,6 +1,6 @@
 ---
 name: setup
-description: Use right after User Intuition is installed or connected, or when the user asks how to get started, whether their User Intuition account is connected, or what User Intuition can do. Checks the connection, asks what they want to learn and from whom, and routes to the right workflow. Do not use for a specific research request that another User Intuition skill already covers.
+description: Use when User Intuition was just installed or connected, or the user asks how to get started, whether their account is connected, or what it can do for qualitative research. Checks the connection and routes to the right workflow. Not for a specific request another skill covers.
 allowed-tools: Read
 ---
 
@@ -18,7 +18,8 @@ Call `get_account`. It is read-only.
 - **The tools are missing, or the call fails with an authorization error:** the MCP connection is not signed in yet. Tell them how to connect in the client they are using, then stop until they say it is done:
   - **Claude Code:** run `/mcp`, select `user-intuition`, and complete the browser sign-in.
   - **Claude Desktop or claude.ai:** open Settings, then Connectors, and connect User Intuition.
-  - **ChatGPT or Codex:** open the User Intuition app or plugin and complete its sign-in when prompted.
+  - **ChatGPT:** install User Intuition from the ChatGPT plugin directory (https://chatgpt.com/plugins/plugin_asdk_app_6ad5de9718bc8191bf0a468cb455fed1) and sign in. On a Business, Enterprise, or Edu workspace, an admin may need to enable it first.
+  - **Codex:** run `codex mcp login user-intuition` and complete the browser sign-in. If the server is not added yet, run `codex mcp add user-intuition --url https://mcp.userintuition.ai/mcp` first.
   - **Cursor or another MCP client:** add `https://mcp.userintuition.ai/mcp` as a remote MCP server and complete the browser sign-in.
 
 Never ask the user to paste a password, API key, token, or authorization code into the chat. Sign-in happens in their browser.
@@ -36,7 +37,7 @@ If they ask what User Intuition does, answer briefly, in this order, and return 
 - **Depth:** AI-moderated interviews of 20 to 30 minutes that ladder 5 to 7 levels deep, from what people did to why it matters to them.
 - **Trust:** real, vetted participants and layered quality controls. Point to https://www.userintuition.ai/quality/.
 - **Modality:** voice, chat, or video interviews in 80+ languages.
-- **Cost:** link https://www.userintuition.ai/pricing/. Do not quote prices.
+- **Cost:** do not quote prices. Cost depends on the audience, its incidence, the country, and the sample size. Offer to draft the study, which is free; for a panel study the matching skill then calls `estimate_panel` for a current cost estimate, and nothing is spent until they approve it. Interviewing their own customers has no panel estimate; no invitation goes out until they approve the plan and the exact batch.
 
 ## 3. Route to the right workflow
 
@@ -62,6 +63,6 @@ If they are unsure where to begin, suggest `search-research` first to see whethe
 
 ## Create nothing without a yes
 
-This skill only reads. Do not call `create_study`, `customize_study`, `create_participants`, `estimate_panel`, `launch_panel`, or any other write tool here. Ask "Should I create the study?" and wait for a clear yes before handing off to a skill that writes. A yes to create a study is not a yes to recruit or spend: those steps need their own approval inside the matching skill.
+This skill only reads. Do not call `create_study`, `customize_study`, `create_participants`, `launch_panel`, or any other write tool here, and leave `estimate_panel` (read-only, but it needs a saved study) to the matching skill. Ask "Should I create the study?" and wait for a clear yes before handing off to a skill that writes. A yes to create a study is not a yes to recruit or spend: those steps need their own approval inside the matching skill.
 
 Never invent participants, quotes, or findings yourself, and never present made-up answers as research. If they ask you to imagine what users would say, offer to design a study with real people instead.

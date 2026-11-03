@@ -1,8 +1,8 @@
 {
   "name": "user-intuition-research",
   "displayName": "User Intuition",
-  "version": "1.6.1",
-  "description": "AI-moderated interviews with real people, run from your agent. Design a study from a brief, recruit vetted consumers or your own customers, and get findings with verbatim quotes tied to their source interviews. Voice, chat, or video in 80+ languages.",
+  "version": "1.6.3",
+  "description": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.",
   "author": {
     "name": "User Intuition",
     "email": "support@userintuition.ai"
@@ -10,7 +10,7 @@
   "homepage": "https://docs.userintuition.ai/skills/overview",
   "repository": "https://github.com/user-intuition/skills",
   "license": "MIT",
-  "logo": "plugins/user-intuition-research/.claude-plugin/icon.svg",
+  "logo": "plugins/user-intuition-research/assets/logo.png",
   "category": "research",
   "keywords": [
     "user-research",

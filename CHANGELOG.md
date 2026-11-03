@@ -2,6 +2,21 @@
 
 Versions follow the plugin version in `plugins/user-intuition-research/.claude-plugin/plugin.json`.
 
+## 1.6.3: ChatGPT plugin and listing cleanup
+
+- The Cursor manifests pointed at the deleted `icon.svg`; they now use `assets/logo.png` (from 1.6.2). Every manifest, `package.json` and `catalog.json` carry 1.6.3, and `scripts/check-skills.mjs` fails if they drift or the CHANGELOG has no entry.
+- ChatGPT is listed as a plugin with a one-click install from the [ChatGPT plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6ad5de9718bc8191bf0a468cb455fed1). In `setup`, ChatGPT users install it there and sign in (Business, Enterprise and Edu workspaces may need an admin), and Codex users run `codex mcp login user-intuition`.
+- One display name and one-line description everywhere ("User Intuition": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests."), including `displayName` in the Claude plugin and marketplace entry. `catalog.json` carries them, and `scripts/check-skills.mjs` fails if a manifest, the README or a listing draft drifts.
+- Shorter skill descriptions, each starting with "Use when", that keep the qualitative research, CPG, retail and tech triggers, so the ChatGPT package passes OpenAI's plugin-eval trigger-cost check.
+- Cohort skills no longer tell the model to use a store, billing, CRM or analytics MCP. The user shares a list or export from those systems instead, per OpenAI's plugin guidelines, and `scripts/check-skills.mjs` fails on third-party MCP or connector instructions.
+- Skills no longer link the pricing page. `user-research` and `setup` explain what cost depends on, offer a free draft study to get an exact `estimate_panel` estimate, and cover own-participant studies. The check covers `references/` too.
+- `create-study-from-brief` names the default voice as the male interviewer voice, matching the `voice` field.
+- `.github/workflows/sync-discovery.yml` also opens or updates a PR in the ChatGPT/Codex package (`Pen-and-Paper-AI/userintuition-mcpserver-ts`), after validation, only from `main`, and with a warning while its `scripts/sync-openai-skills.mjs` is missing.
+
+## 1.6.2: logo
+
+- New User Intuition logo (`assets/logo.png`) for the Claude plugin.
+
 ## 1.6.1: allowed-tools in every skill
 
 - Every `SKILL.md` declares `allowed-tools: Read`, which directories such as claudskills.com require. In Claude Code this pre-approves only reading the skill's own reference files; every MCP action, including paid launches, still asks for permission. `scripts/check-skills.mjs` fails if a skill names any other tool.

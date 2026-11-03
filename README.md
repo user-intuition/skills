@@ -1,12 +1,14 @@
-# Run real qualitative research from your AI agent
+# User Intuition: run real qualitative research from your AI agent
 
-Ask your agent to run a concept test with 20 frozen-dinner buyers. It drafts the study, shows you the plan and the cost, and once you confirm, it fields AI-moderated interviews (typically 20–30 minutes) and returns findings with verbatim quotes.
+Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.
+
+Ask your agent to run a concept test with 20 frozen-dinner buyers, find out why shoppers trade down to a store brand, or learn why trial users of your app don't activate. It drafts the study, shows you the plan and the cost, and once you confirm, it fields AI-moderated interviews (typically 20–30 minutes) and returns findings with verbatim quotes.
 Interviews ladder 5–7 levels deep, from what people did to why it matters to them. Participants come from a vetted 4M+ consumer panel or from your own customers, by voice, chat or video in 80+ languages.
 No account yet? Ask for help with any research question: the `user-research` skill plans the study or synthesizes research you already have, then fields it with real people when you're ready.
 
 These are Agent Skills for running qualitative research with [User Intuition](https://www.userintuition.ai): create interview studies, design screeners, field panel recruits, and turn transcripts into stakeholder-ready findings. The plugin bundles the hosted [User Intuition MCP server](https://docs.userintuition.ai/mcp-server/overview) for the *tools* and the skills for the *play*: the workflow, guardrails, and order of operations that make research runs reproducible.
 
-**Works with:** Claude Code (plugin), Claude Desktop and claude.ai (connector and skill ZIPs), ChatGPT (connector), Codex, Cursor, and any agent that reads Agent Skills.
+**Works with:** Claude Code (plugin), Claude Desktop and claude.ai (connector and skill ZIPs), [ChatGPT (plugin)](https://chatgpt.com/plugins/plugin_asdk_app_6ad5de9718bc8191bf0a468cb455fed1), Codex, Cursor, and any agent that reads Agent Skills.
 
 **Guides:** [Set up User Intuition in Claude](https://www.userintuition.ai/reference-guides/claude-mcp-customer-research-setup/) · [Skills docs](https://docs.userintuition.ai/skills/overview) · [How quality is controlled](https://www.userintuition.ai/quality/) · [Pricing](https://www.userintuition.ai/pricing/)
 
@@ -33,7 +35,7 @@ Every surface uses the same hosted MCP server (`https://mcp.userintuition.ai/mcp
 | **Claude Desktop / claude.ai** | Download a skill ZIP from [Releases](https://github.com/user-intuition/skills/releases) and upload it in Settings → Capabilities → Skills. One ZIP per skill; the bundle ZIP holds all of them. | Settings → Connectors → add a custom connector with `https://mcp.userintuition.ai/mcp`. |
 | **Codex** | `npx skills add user-intuition/skills -a codex` | `codex mcp add user-intuition --url https://mcp.userintuition.ai/mcp`, then `codex mcp login user-intuition`. |
 | **Cursor** | Install the plugin defined in [`.cursor-plugin/plugin.json`](.cursor-plugin/plugin.json), or `npx skills add user-intuition/skills -a cursor` | Bundled with the plugin, or add `https://mcp.userintuition.ai/mcp` under Settings → MCP. Sign in when prompted. |
-| **ChatGPT** | Skills ship inside the User Intuition app. | Settings → Apps & Connectors → User Intuition, then sign in. |
+| **ChatGPT** | Install [User Intuition from the ChatGPT plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6ad5de9718bc8191bf0a468cb455fed1) in one click. The skills ship inside the plugin. | Bundled with the plugin. Sign in when prompted. Without the plugin, add `https://mcp.userintuition.ai/mcp` as a custom MCP connector in Settings → Apps & Connectors (developer mode). |
 | **Any other agent** | `npx skills add user-intuition/skills` (pick your agent when asked, or pass `-a <agent>`) | Add `https://mcp.userintuition.ai/mcp` as a remote MCP server in your client. |
 
 Install a single skill with `npx skills add user-intuition/skills -s create-study-from-brief`. To build the Desktop ZIPs yourself, run `node scripts/build-desktop-zip.mjs` (output in `dist/`).

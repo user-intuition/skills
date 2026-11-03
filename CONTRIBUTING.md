@@ -24,10 +24,10 @@ The exporter generates individual documentation pages, the library index, a sour
 
 Two workflows keep the copies outside this repo in step with it:
 
-- **Docs and website** (`.github/workflows/sync-discovery.yml`): after skill files change on `main`, it runs the exporter above and opens or updates one PR in `Pen-and-Paper-AI/userintuition-docs` and one in `Pen-and-Paper-AI/userintuition-website`, on the branch `sync/user-intuition-skills`. Merge them as usual. Needs the `DISCOVERY_SYNC_TOKEN` secret, a token that can push branches and open PRs in both repos. It can also be run by hand from the Actions tab.
+- **Docs, website and ChatGPT plugin** (`.github/workflows/sync-discovery.yml`): after skill files change on `main`, it runs the exporter above and opens or updates one PR in `Pen-and-Paper-AI/userintuition-docs` and one in `Pen-and-Paper-AI/userintuition-website`. A second job runs `scripts/sync-openai-skills.mjs` in `Pen-and-Paper-AI/userintuition-mcpserver-ts` to refresh the ChatGPT/Codex package (`openai-plugin/skills`) and opens or updates a PR there; it skips if that script is missing. All PRs use the branch `sync/user-intuition-skills`. Merge them as usual. Needs the `DISCOVERY_SYNC_TOKEN` secret, a token that can push branches and open PRs in all three repos. It can also be run by hand from the Actions tab.
 - **ClawHub** (`.github/workflows/publish-clawhub.yml`): on a version tag, it publishes the skills listed in `clawhub-skills.txt` as that version. The tag must match the plugin version. Needs the `CLAWHUB_TOKEN` secret (`clawhub token` prints it after `clawhub login`).
 
-Directories that read this repo directly (skills.sh, claudemarketplaces.com, mcpmarket, cursor.directory on re-scan) need no sync. The ChatGPT/Codex package has its own sync script in the MCP server repo.
+Directories that read this repo directly (skills.sh, claudemarketplaces.com, mcpmarket, cursor.directory on re-scan) need no sync.
 
 ## Build the Desktop ZIPs
 
@@ -45,7 +45,7 @@ Public copy in skills and this README follows the same claims as the website:
 - Lead with depth, then trust, then modality, then cost.
 - The panel is a vetted 4M+ consumer panel. B2B audiences are recruited to order; never describe them in the same sentence as the panel.
 - Interviews are typically 20–30 minutes.
-- No literal prices: link https://www.userintuition.ai/pricing/.
+- No literal prices. Skills never link the pricing page: for cost they call `estimate_panel` before launch. The README and listings link https://www.userintuition.ai/pricing/.
 - Quality claims link https://www.userintuition.ai/quality/.
 - Describe capabilities, never the infrastructure vendors behind them.
 - Never invent findings, quotes or claims, including in examples.
