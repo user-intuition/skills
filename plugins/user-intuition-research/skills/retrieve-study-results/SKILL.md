@@ -1,6 +1,6 @@
 ---
 name: retrieve-study-results
-description: Use when the user wants to fetch an existing User Intuition study report, inspect its evidence coverage, or follow a finding or participant response to supporting interview evidence without regenerating analysis.
+description: Use when the user wants an existing User Intuition study report, its evidence coverage, or the interview evidence behind a finding, without regenerating analysis.
 allowed-tools: Read
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: search-research
-description: Use when the user wants to find existing User Intuition findings or participant responses across authorized studies before deciding whether more qualitative research is needed.
+description: Use when the user wants existing User Intuition findings or participant responses across studies, before deciding whether new qualitative research is needed.
 allowed-tools: Read
 ---
 

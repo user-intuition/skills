@@ -1,6 +1,6 @@
 ---
 name: setup
-description: Use right after User Intuition is installed or connected, or when the user asks how to get started, whether their User Intuition account is connected, or what User Intuition can do for qualitative research with real people. Checks the connection, asks what they want to learn and from whom, and routes to the right workflow, from consumer and shopper studies to product and customer interviews. Do not use for a specific research request that another User Intuition skill already covers.
+description: Use when User Intuition was just installed or connected, or the user asks how to get started, whether their account is connected, or what it can do for qualitative research. Checks the connection and routes to the right workflow. Not for a specific request another skill covers.
 allowed-tools: Read
 ---
 

@@ -7,7 +7,7 @@ Versions follow the plugin version in `plugins/user-intuition-research/.claude-p
 - New User Intuition logo (`assets/logo.png`) for the Claude and Cursor plugins. The Cursor manifests pointed at the deleted `icon.svg` and now use the new file; the Cursor plugin version catches up with Claude's.
 - ChatGPT is listed as a plugin with a one-click install from the [ChatGPT plugin directory](https://chatgpt.com/plugins/plugin_asdk_app_6ad5de9718bc8191bf0a468cb455fed1); the `setup` skill tells ChatGPT users to install it there and sign in.
 - One display name and one-line description everywhere ("User Intuition": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests."). `catalog.json` carries them, and `scripts/check-skills.mjs` fails if a manifest, the README or a listing draft drifts.
-- `user-research` and `setup` descriptions name qualitative research.
+- `user-research` and `setup` descriptions name qualitative research. Every skill description starts with "Use when", and the longer ones are shorter: all 21 together drop from about 1,270 to about 930 tokens, so the ChatGPT package passes OpenAI's plugin-eval trigger-cost check.
 - `.github/workflows/sync-discovery.yml` also opens or updates a PR in the ChatGPT/Codex package (`Pen-and-Paper-AI/userintuition-mcpserver-ts`) once its `scripts/sync-openai-skills.mjs` exists.
 
 ## 1.6.1: allowed-tools in every skill

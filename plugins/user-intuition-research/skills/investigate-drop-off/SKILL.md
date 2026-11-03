@@ -1,6 +1,6 @@
 ---
 name: investigate-drop-off
-description: Use when the user wants to understand why people drop off, abandon a cart or checkout, fail to finish signup or onboarding, or stop using a feature, and wants to interview the people behind a funnel or analytics drop-off from PostHog, Mixpanel, Amplitude, or another analytics tool.
+description: Use when the user wants to interview people who abandoned a cart, checkout, signup, onboarding, or feature, from a funnel drop-off in PostHog, Mixpanel, Amplitude, or another analytics tool.
 allowed-tools: Read
 ---
 

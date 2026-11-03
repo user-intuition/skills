@@ -1,6 +1,6 @@
 ---
 name: user-research
-description: Use when the user wants to plan qualitative research or user or customer interviews, write a discussion guide or interview guide, design a screener, decide what to ask customers, synthesize interview transcripts, call notes, open-ended survey answers, reviews, or support tickets into themes, talk to customers or shoppers, test a concept, packaging, claim, or message, run shopper research, a usage and attitudes (U&A) study, a path-to-purchase study, or consumer insights for a CPG brand or retailer, understand category buyers, why people buy, switch brands, or churn, or run AI-moderated interviews with real people.
+description: Use when the user wants to plan qualitative research or customer interviews, write a discussion guide or screener, synthesize transcripts, notes, reviews, or survey answers into themes, test a concept, pack, or message, or run AI-moderated interviews with real people, from shopper, path-to-purchase, and usage and attitudes research for CPG brands and retailers to product research for tech teams.
 allowed-tools: Read
 ---
 
