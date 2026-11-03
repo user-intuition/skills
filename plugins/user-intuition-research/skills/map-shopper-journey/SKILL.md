@@ -1,6 +1,6 @@
 ---
 name: map-shopper-journey
-description: Use when the user wants to map the shopper journey or path to purchase, in store or online: the trip trigger, the shelf or product page, substitutions, and the decision in the aisle.
+description: Use when the user wants shopper research on the path to purchase for a CPG brand or retailer, in store or online: the trip trigger, the shelf or product page, substitutions, and the decision in the aisle.
 allowed-tools: Read
 ---
 

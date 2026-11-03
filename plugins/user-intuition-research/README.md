@@ -1,4 +1,4 @@
-# User Intuition Research
+# User Intuition
 
 This plugin adds research workflow skills and a hosted User Intuition MCP connection to Claude Code. The `user-research` skill plans studies and synthesizes existing research without an account. The other skills plan interview studies, design screeners, invite participants, monitor fielding, inspect interview quality, retrieve study results, and search prior research. The skills describe when to use the MCP tools and require explicit approval before actions that spend credits, send invitations, or delete interviews.
 

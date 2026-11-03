@@ -10,11 +10,11 @@ events unless the human sets that up separately and approves it.
 
 ## 1. Find the cohort
 
-Use whichever tool the agent already has for the source system: a commerce,
-billing, CRM, or analytics MCP, or a CSV export the human provides. Read only
-what the cohort needs: email, a stable customer ID, the event, its date, and
-at most a few attributes worth passing as interview context. If no tool or file
-is available, ask for an export instead of guessing.
+Work from a list or CSV export the human shares from their store, billing
+system, CRM, or analytics tool. Read only what the cohort needs: email, a
+stable customer ID, the event, its date, and at most a few attributes worth
+passing as interview context. If no list is available, ask for an export
+instead of guessing.
 
 ## 2. Filter before anyone sees a list
 

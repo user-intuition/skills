@@ -1,6 +1,6 @@
 ---
 name: run-a-concept-test
-description: Use when the user wants participants to react to a concept, pack design, claim, message, ad, prototype, or landing page in a User Intuition interview, including pack, claims, and concept tests.
+description: Use when the user wants participants to react to a concept, pack design, claim, message, ad, prototype, or landing page in a User Intuition interview, including pack, claims, and concept tests for a CPG brand or retailer.
 allowed-tools: Read
 ---
 

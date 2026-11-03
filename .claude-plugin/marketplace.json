@@ -11,6 +11,7 @@
   "plugins": [
     {
       "name": "user-intuition-research",
+      "displayName": "User Intuition",
       "source": "./plugins/user-intuition-research",
       "description": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.",
       "author": {

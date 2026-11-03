@@ -49,14 +49,14 @@ const requiredGuidance = {
     /userintuition\.ai\/methodology\//,
     /`estimate_panel` for a current cost estimate/,
     /`create-study-from-brief`/,
-    /4M\+ consumer panel or your own customers\. B2B audiences are recruited to order\./,
+    /vetted 4M\+ panel or your own customers/,
   ],
   'create-study-from-brief': [
     /\*\*Practice run, not findings\*\*/,
     /Only if the user asks for more, offer a separate synthetic-respondents study/,
     /may use account credits/,
     /never mix its results into the real study's analysis/,
-    /voice interview in English with Elliot/i,
+    /voice interview in English with the male interviewer voice/i,
     /complete persisted study plan/i,
     /exact plan version/i,
     /dashboard_url/,
@@ -193,15 +193,61 @@ if (JSON.stringify(relative) !== JSON.stringify(nestedCursor)) {
   errors.push(`${pluginDir}.cursor-plugin/plugin.json must match .cursor-plugin/plugin.json with paths relative to the plugin folder`);
 }
 
+// Everything a skill installs: its SKILL.md, the shared references, and each skill's vendored copies.
+const sharedReferencesRoot = join(root, pluginDir, 'references');
+const installed = [
+  ...Object.entries(bodies).map(([name, text]) => [`${name}/SKILL.md`, text]),
+  ...readdirSync(sharedReferencesRoot).map((f) => [`references/${f}`, readFileSync(join(sharedReferencesRoot, f), 'utf8')]),
+  ...actualSkills.flatMap((name) => {
+    const dir = join(skillsRoot, name, 'references');
+    try {
+      return readdirSync(dir).map((f) => [`${name}/references/${f}`, readFileSync(join(dir, f), 'utf8')]);
+    } catch {
+      return [];
+    }
+  }),
+];
+
 // Skills give cost through estimate_panel, never a pricing page.
-if (/userintuition\.ai\/pricing|pricing page/i.test(combined)) {
-  errors.push('Installable Skills must not link or mention the pricing page; point to estimate_panel instead');
+for (const [where, text] of installed) {
+  if (/userintuition\.ai\/pricing|pricing page/i.test(text)) {
+    errors.push(`${where} must not link or mention the pricing page; point to estimate_panel instead`);
+  }
+}
+
+// OpenAI's plugin guidelines forbid telling the model to invoke another plugin or connector.
+// Third-party systems may appear only as where the user's list or export comes from.
+const thirdParty = /\b(Stripe|Shopify|HubSpot|Salesforce|PostHog|Mixpanel|Amplitude|commerce|billing|CRM|analytics|store)\b/i;
+for (const [where, text] of installed) {
+  for (const sentence of text.replace(/\s+/g, ' ').split(/(?<=[.!?])\s/)) {
+    if (/\b(MCPs?|connectors?|plugins?)\b/i.test(sentence) && thirdParty.test(sentence)) {
+      errors.push(`${where} tells the model to use a third-party MCP, connector or plugin: "${sentence.slice(0, 120)}"`);
+    }
+    if (/tools the agent (already )?has/i.test(sentence)) {
+      errors.push(`${where} sends the model to other tools it may have: "${sentence.slice(0, 120)}"`);
+    }
+  }
 }
 
 // Every listing uses the same display name and one-line description as the Cursor manifest.
 const claudePlugin = JSON.parse(readFileSync(join(root, pluginDir, '.claude-plugin', 'plugin.json'), 'utf8'));
 const marketplace = JSON.parse(readFileSync(join(root, '.claude-plugin', 'marketplace.json'), 'utf8'));
-if (rootCursor.displayName !== 'User Intuition') errors.push('.cursor-plugin/plugin.json displayName must be "User Intuition"');
+for (const [where, manifest] of [
+  ['.cursor-plugin/plugin.json', rootCursor],
+  ['.claude-plugin/plugin.json', claudePlugin],
+  ['marketplace.json plugin entry', marketplace.plugins[0]],
+]) {
+  if (manifest.displayName !== 'User Intuition') errors.push(`${where} displayName must be "User Intuition"`);
+}
+
+// One version everywhere, with a CHANGELOG entry for it.
+const packageJson = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
+for (const [where, version] of [['.cursor-plugin/plugin.json', rootCursor.version], ['package.json', packageJson.version]]) {
+  if (version !== claudePlugin.version) errors.push(`${where} version ${version} must match .claude-plugin/plugin.json ${claudePlugin.version}`);
+}
+if (!readFileSync(join(root, 'CHANGELOG.md'), 'utf8').includes(`## ${claudePlugin.version}:`)) {
+  errors.push(`CHANGELOG.md has no entry for ${claudePlugin.version}`);
+}
 for (const [where, text] of [
   ['.claude-plugin/plugin.json', claudePlugin.description],
   ['marketplace.json metadata', marketplace.metadata.description],

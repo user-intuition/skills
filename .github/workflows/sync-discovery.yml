@@ -28,6 +28,7 @@ concurrency:
 
 jobs:
   sync:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -77,6 +78,9 @@ jobs:
           sync website-repo Pen-and-Paper-AI/userintuition-website
 
   openai-plugin:
+    # Runs after the sync job's npm test, so it never pushes skills that fail validation.
+    needs: sync
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -98,7 +102,7 @@ jobs:
         run: |
           repo=Pen-and-Paper-AI/userintuition-mcpserver-ts branch=sync/user-intuition-skills
           if [ ! -f scripts/sync-openai-skills.mjs ]; then
-            echo "$repo has no scripts/sync-openai-skills.mjs yet; skipping"
+            echo "::warning::$repo has no scripts/sync-openai-skills.mjs yet; skipped the ChatGPT plugin sync"
             exit 0
           fi
           node scripts/sync-openai-skills.mjs --from "$GITHUB_WORKSPACE/skills"

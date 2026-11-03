@@ -17,7 +17,7 @@ const entries=readdirSync(join(root,'plugins/user-intuition-research/skills')).s
  return {name,description:match[2],path,body,tools,sha256:createHash('sha256').update(body).digest('hex')};
 });
 const plugin=JSON.parse(readFileSync(join(root,'.cursor-plugin/plugin.json'),'utf8'));
-const catalog={name:plugin.displayName,description:plugin.description,repository:'https://github.com/user-intuition/skills',skills:entries.map(({body,path,...e})=>({...e,url:`https://raw.githubusercontent.com/user-intuition/skills/main/${path}`,documentation:`https://docs.userintuition.ai/skills/${e.name}`}))};
+const catalog={name:plugin.displayName,description:plugin.description,version:plugin.version,repository:'https://github.com/user-intuition/skills',skills:entries.map(({body,path,...e})=>({...e,url:`https://raw.githubusercontent.com/user-intuition/skills/main/${path}`,documentation:`https://docs.userintuition.ai/skills/${e.name}`}))};
 const text=JSON.stringify(catalog,null,2)+'\n';
 if(args.includes('--check')){if(readFileSync(join(root,'catalog.json'),'utf8')!==text)throw Error('Catalog stale: run npm run catalog.');}
 else writeFileSync(join(root,'catalog.json'),text);
