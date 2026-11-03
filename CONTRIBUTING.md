@@ -45,7 +45,7 @@ Public copy in skills and this README follows the same claims as the website:
 - Lead with depth, then trust, then modality, then cost.
 - The panel is a vetted 4M+ consumer panel. B2B audiences are recruited to order; never describe them in the same sentence as the panel.
 - Interviews are typically 20–30 minutes.
-- No literal prices: link https://www.userintuition.ai/pricing/.
+- No literal prices. Skills never link the pricing page: for cost they call `estimate_panel` before launch. The README and listings link https://www.userintuition.ai/pricing/.
 - Quality claims link https://www.userintuition.ai/quality/.
 - Describe capabilities, never the infrastructure vendors behind them.
 - Never invent findings, quotes or claims, including in examples.

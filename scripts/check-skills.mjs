@@ -47,7 +47,7 @@ const requiredGuidance = {
     /\*\*X of Y sources\*\*/,
     /never invent, merge, or tidy a quote/i,
     /userintuition\.ai\/methodology\//,
-    /userintuition\.ai\/pricing\//,
+    /`estimate_panel` for a current cost estimate/,
     /`create-study-from-brief`/,
     /4M\+ consumer panel or your own customers\. B2B audiences are recruited to order\./,
   ],
@@ -191,6 +191,11 @@ const relative = Object.fromEntries(Object.entries(rootCursor).map(([key, value]
   [key, ['logo', 'skills', 'mcpServers'].includes(key) ? value.replace(pluginDir, '') : value]));
 if (JSON.stringify(relative) !== JSON.stringify(nestedCursor)) {
   errors.push(`${pluginDir}.cursor-plugin/plugin.json must match .cursor-plugin/plugin.json with paths relative to the plugin folder`);
+}
+
+// Skills give cost through estimate_panel, never a pricing page.
+if (/userintuition\.ai\/pricing|pricing page/i.test(combined)) {
+  errors.push('Installable Skills must not link or mention the pricing page; point to estimate_panel instead');
 }
 
 // Every listing uses the same display name and one-line description as the Cursor manifest.

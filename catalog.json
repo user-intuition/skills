@@ -259,7 +259,7 @@
         "get_account",
         "list_organizations"
       ],
-      "sha256": "2bbb365a84aa4ed025b8d34f67433dacb838a81ce09f42219d547635bb9e7a0c",
+      "sha256": "071ae024c4ba5ad47bb447abf07fd004a34967c1baf7cd0077449ac394688636",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/setup/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/setup"
     },
@@ -271,7 +271,7 @@
         "upload_research_source",
         "chat_research_session"
       ],
-      "sha256": "7fa3af241029616d4caece58249ca3e9b942926d365544f35498e19c4e3326bf",
+      "sha256": "b608877d71ba07386db11a151ca330ebead33ef3e27cb5f210c38e0fab93d749",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/user-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/user-research"
     }

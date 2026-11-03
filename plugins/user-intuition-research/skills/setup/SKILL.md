@@ -37,7 +37,7 @@ If they ask what User Intuition does, answer briefly, in this order, and return 
 - **Depth:** AI-moderated interviews of 20 to 30 minutes that ladder 5 to 7 levels deep, from what people did to why it matters to them.
 - **Trust:** real, vetted participants and layered quality controls. Point to https://www.userintuition.ai/quality/.
 - **Modality:** voice, chat, or video interviews in 80+ languages.
-- **Cost:** link https://www.userintuition.ai/pricing/. Do not quote prices.
+- **Cost:** do not quote prices. For a panel study, the matching skill calls `estimate_panel` for a current cost estimate before launch, and nothing is spent until they approve it.
 
 ## 3. Route to the right workflow
 
