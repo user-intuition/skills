@@ -1,4 +1,6 @@
 {
+  "name": "User Intuition",
+  "description": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.",
   "repository": "https://github.com/user-intuition/skills",
   "skills": [
     {
@@ -252,24 +254,24 @@
     },
     {
       "name": "setup",
-      "description": "Use right after User Intuition is installed or connected, or when the user asks how to get started, whether their User Intuition account is connected, or what User Intuition can do. Checks the connection, asks what they want to learn and from whom, and routes to the right workflow. Do not use for a specific research request that another User Intuition skill already covers.",
+      "description": "Use right after User Intuition is installed or connected, or when the user asks how to get started, whether their User Intuition account is connected, or what User Intuition can do for qualitative research with real people. Checks the connection, asks what they want to learn and from whom, and routes to the right workflow, from consumer and shopper studies to product and customer interviews. Do not use for a specific research request that another User Intuition skill already covers.",
       "tools": [
         "get_account",
         "list_organizations"
       ],
-      "sha256": "331787bafa17276fd3334999b0154fde77b2aba42e6a7db235df8dada66c4aac",
+      "sha256": "0637713baf6d249d3440f061ed66a6b88f797a1cde5eb88bcffc8a287a325c3e",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/setup/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/setup"
     },
     {
       "name": "user-research",
-      "description": "Use when the user wants to plan user or customer interviews, write a discussion guide or interview guide, design a screener, decide what to ask customers, synthesize interview transcripts, call notes, open-ended survey answers, reviews, or support tickets into themes, talk to customers or shoppers, test a concept, packaging, claim, or message, run shopper research, a usage and attitudes (U&A) study, a path-to-purchase study, or consumer insights for a CPG brand or retailer, understand category buyers, why people buy, switch brands, or churn, or run AI-moderated interviews with real people.",
+      "description": "Use when the user wants to plan qualitative research or user or customer interviews, write a discussion guide or interview guide, design a screener, decide what to ask customers, synthesize interview transcripts, call notes, open-ended survey answers, reviews, or support tickets into themes, talk to customers or shoppers, test a concept, packaging, claim, or message, run shopper research, a usage and attitudes (U&A) study, a path-to-purchase study, or consumer insights for a CPG brand or retailer, understand category buyers, why people buy, switch brands, or churn, or run AI-moderated interviews with real people.",
       "tools": [
         "create_research_session",
         "upload_research_source",
         "chat_research_session"
       ],
-      "sha256": "a714252f44f5b4a8ff1169b5ad8c6f06f892a615615079b7761a57e7dc939c78",
+      "sha256": "681835dbac011d9056a2c2bb03d4b59c47d1f59c055f659a31036e217f7ef194",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/user-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/user-research"
     }

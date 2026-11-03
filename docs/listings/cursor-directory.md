@@ -8,7 +8,7 @@ User Intuition
 
 ## One-line description
 
-AI-moderated interviews with real people, run from your agent.
+Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.
 
 ## Category / tags
 
@@ -16,7 +16,7 @@ Research · `user-research`, `customer-interviews`, `qualitative-research`, `con
 
 ## Description
 
-User Intuition runs AI-moderated interviews with real people and brings back findings you can trace to the source. Add it to Cursor and ask your agent to find out why shoppers switch brands, which packaging claim lands, or why customers cancel. The agent drafts the study, you approve it, and real participants take the interview.
+User Intuition runs AI-moderated interviews with real people and brings back findings you can trace to the source. Add it to Cursor and ask your agent to find out why shoppers switch brands, which packaging claim lands, what happens on a shopper's trip to the shelf, or why users of your app cancel. The agent drafts the study, you approve it, and real participants take the interview.
 
 - **Depth.** Interviews run 20 to 30 minutes and ladder 5 to 7 levels deep, from what people did to why it matters to them.
 - **Trust.** Consumer audiences come from a vetted 4M+ consumer panel. B2B audiences are recruited to order. You can also invite your own customers. How quality is controlled: https://www.userintuition.ai/quality/

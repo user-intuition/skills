@@ -1,6 +1,6 @@
 ---
 name: setup
-description: Use right after User Intuition is installed or connected, or when the user asks how to get started, whether their User Intuition account is connected, or what User Intuition can do. Checks the connection, asks what they want to learn and from whom, and routes to the right workflow. Do not use for a specific research request that another User Intuition skill already covers.
+description: Use right after User Intuition is installed or connected, or when the user asks how to get started, whether their User Intuition account is connected, or what User Intuition can do for qualitative research with real people. Checks the connection, asks what they want to learn and from whom, and routes to the right workflow, from consumer and shopper studies to product and customer interviews. Do not use for a specific research request that another User Intuition skill already covers.
 allowed-tools: Read
 ---
 
@@ -18,7 +18,8 @@ Call `get_account`. It is read-only.
 - **The tools are missing, or the call fails with an authorization error:** the MCP connection is not signed in yet. Tell them how to connect in the client they are using, then stop until they say it is done:
   - **Claude Code:** run `/mcp`, select `user-intuition`, and complete the browser sign-in.
   - **Claude Desktop or claude.ai:** open Settings, then Connectors, and connect User Intuition.
-  - **ChatGPT or Codex:** open the User Intuition app or plugin and complete its sign-in when prompted.
+  - **ChatGPT:** install User Intuition from the ChatGPT plugin directory (https://chatgpt.com/plugins/plugin_asdk_app_6ad5de9718bc8191bf0a468cb455fed1), then sign in when prompted.
+  - **Codex:** open the User Intuition plugin and complete its sign-in when prompted.
   - **Cursor or another MCP client:** add `https://mcp.userintuition.ai/mcp` as a remote MCP server and complete the browser sign-in.
 
 Never ask the user to paste a password, API key, token, or authorization code into the chat. Sign-in happens in their browser.

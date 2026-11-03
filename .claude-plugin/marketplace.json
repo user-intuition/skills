@@ -1,7 +1,7 @@
 {
   "name": "user-intuition",
   "metadata": {
-    "description": "Skills for running customer research with AI agents on User Intuition — interview studies, screeners, panel recruiting, and transcript analysis."
+    "description": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests."
   },
   "owner": {
     "name": "User Intuition",
@@ -12,7 +12,7 @@
     {
       "name": "user-intuition-research",
       "source": "./plugins/user-intuition-research",
-      "description": "Run customer research with AI agents: create interview studies, design screeners, field panels, and analyze transcripts using the bundled User Intuition MCP server.",
+      "description": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.",
       "author": {
         "name": "User Intuition",
         "url": "https://www.userintuition.ai"
@@ -24,7 +24,11 @@
         "customer-interviews",
         "panel-research",
         "concept-testing",
-        "mcp"
+        "mcp",
+        "qualitative-research",
+        "consumer-insights",
+        "shopper-research",
+        "cpg"
       ]
     }
   ]

@@ -193,6 +193,20 @@ if (JSON.stringify(relative) !== JSON.stringify(nestedCursor)) {
   errors.push(`${pluginDir}.cursor-plugin/plugin.json must match .cursor-plugin/plugin.json with paths relative to the plugin folder`);
 }
 
+// Every listing uses the same display name and one-line description as the Cursor manifest.
+const claudePlugin = JSON.parse(readFileSync(join(root, pluginDir, '.claude-plugin', 'plugin.json'), 'utf8'));
+const marketplace = JSON.parse(readFileSync(join(root, '.claude-plugin', 'marketplace.json'), 'utf8'));
+if (rootCursor.displayName !== 'User Intuition') errors.push('.cursor-plugin/plugin.json displayName must be "User Intuition"');
+for (const [where, text] of [
+  ['.claude-plugin/plugin.json', claudePlugin.description],
+  ['marketplace.json metadata', marketplace.metadata.description],
+  ['marketplace.json plugin entry', marketplace.plugins[0].description],
+  ['README.md', readFileSync(join(root, 'README.md'), 'utf8')],
+  ...readdirSync(join(root, 'docs', 'listings')).map(f => [`docs/listings/${f}`, readFileSync(join(root, 'docs', 'listings', f), 'utf8')]),
+]) {
+  if (!text?.includes(rootCursor.description)) errors.push(`${where} must use the one-line description from .cursor-plugin/plugin.json`);
+}
+
 // Directories such as claudskills.com require allowed-tools. In Claude Code it pre-approves tools,
 // so it may only name Read: every MCP action, paid ones above all, keeps its permission prompt.
 for (const name of actualSkills) {

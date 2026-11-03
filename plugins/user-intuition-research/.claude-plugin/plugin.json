@@ -1,7 +1,7 @@
 {
   "name": "user-intuition-research",
   "version": "1.6.2",
-  "description": "Plan interview studies and synthesize research you already have, no account needed; then run AI-moderated interviews with real people, retrieve source-linked results, and search prior evidence with User Intuition.",
+  "description": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.",
   "author": {
     "name": "User Intuition",
     "email": "support@userintuition.ai",
