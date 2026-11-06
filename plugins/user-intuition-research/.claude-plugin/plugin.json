@@ -1,8 +1,8 @@
 {
   "name": "user-intuition-research",
   "displayName": "User Intuition",
-  "version": "1.6.3",
-  "description": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.",
+  "version": "1.6.4",
+  "description": "Qualitative research with real people: AI-moderated interviews, 4M+ vetted panel, 80+ languages.",
   "author": {
     "name": "User Intuition",
     "email": "support@userintuition.ai",
@@ -27,6 +27,12 @@
     "churn-interviews",
     "consumer-insights",
     "shopper-research",
-    "cpg"
+    "cpg",
+    "user-interviews",
+    "market-research",
+    "prototype-testing",
+    "participant-recruitment",
+    "focus-group-alternative",
+    "ai-moderated-interviews"
   ]
 }

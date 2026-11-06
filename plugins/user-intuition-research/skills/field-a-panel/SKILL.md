@@ -1,6 +1,6 @@
 ---
 name: field-a-panel
-description: Use when the user wants to estimate, launch, pause, resume, or stop recruitment for a User Intuition Panel study.
+description: Use when the user wants to estimate, launch, pause, resume, or stop participant recruitment from the 4M+ vetted consumer panel for a User Intuition Panel study.
 allowed-tools: Read
 ---
 

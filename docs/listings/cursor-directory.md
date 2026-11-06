@@ -1,6 +1,6 @@
-# cursor.directory listing (draft)
+# cursor.directory listing
 
-> **Status: draft. Not submitted.** Submitting needs Kevin's OK. The plugin manifest is `.cursor-plugin/plugin.json` at the repository root.
+The plugin manifest is `.cursor-plugin/plugin.json` at the repository root.
 
 ## Name
 
@@ -8,7 +8,7 @@ User Intuition
 
 ## One-line description
 
-Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.
+Qualitative research with real people: AI-moderated interviews, 4M+ vetted panel, 80+ languages.
 
 ## Category / tags
 
