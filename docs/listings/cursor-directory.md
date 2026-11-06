@@ -1,6 +1,6 @@
-# cursor.directory listing (draft)
+# cursor.directory listing
 
-> **Status: draft. Not submitted.** Submitting needs Kevin's OK. The plugin manifest is `.cursor-plugin/plugin.json` at the repository root.
+The plugin manifest is `.cursor-plugin/plugin.json` at the repository root.
 
 ## Name
 
