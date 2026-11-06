@@ -1,7 +1,7 @@
 {
   "name": "User Intuition",
-  "description": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.",
-  "version": "1.6.3",
+  "description": "Qualitative research with real people: AI-moderated interviews, 4M+ vetted panel, 80+ languages.",
+  "version": "1.6.4",
   "repository": "https://github.com/user-intuition/skills",
   "skills": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "name": "create-study-from-brief",
-      "description": "Use when the user wants to create a User Intuition interview study from a brief, goal, problem, or research idea.",
+      "description": "Use when the user wants to create a User Intuition interview study (user interviews, customer interviews, market research, concept or prototype tests with real people) from a brief, goal, problem, or research idea.",
       "tools": [
         "create_study",
         "queue_customize_study",
@@ -30,7 +30,7 @@
         "customize_study",
         "get_study"
       ],
-      "sha256": "087e7effe68ddd2744718ccbcd61336d2c701f1cc0a4c871d13f52948fe37bec",
+      "sha256": "a05055e09674819f041fb67c1dcc8c4c10de1c99b3f7119396441834053a0ddf",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/create-study-from-brief/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/create-study-from-brief"
     },
@@ -59,7 +59,7 @@
     },
     {
       "name": "field-a-panel",
-      "description": "Use when the user wants to estimate, launch, pause, resume, or stop recruitment for a User Intuition Panel study.",
+      "description": "Use when the user wants to estimate, launch, pause, resume, or stop participant recruitment from the 4M+ vetted consumer panel for a User Intuition Panel study.",
       "tools": [
         "get_study",
         "estimate_panel",
@@ -69,7 +69,7 @@
         "resume_study",
         "stop_study"
       ],
-      "sha256": "6b62618535e42a7e3db5a83d0acf307ff60db3585bc3d4a7faed97a9244c874c",
+      "sha256": "05c7ed0bf18dfc851ac48472615445a96baf5f7884fe07bfb10f99be3cfff0a3",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/field-a-panel/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/field-a-panel"
     },
@@ -266,13 +266,13 @@
     },
     {
       "name": "user-research",
-      "description": "Use when the user wants to plan qualitative research or customer interviews, write a discussion guide or screener, synthesize interview transcripts, call notes, or research notes into themes, understand why people buy, switch brands, or churn, test a concept, pack, or message, or run AI-moderated interviews with real people, from shopper and usage and attitudes research for CPG brands and retailers to product research for tech teams.",
+      "description": "Use when the user wants to plan qualitative research, market research, or user and customer interviews, write a discussion guide or screener, synthesize interview transcripts, call notes, or research notes into themes, understand why people buy, switch brands, or churn, test a concept, pack, or message, or run AI-moderated interviews with real people as a focus-group alternative, from shopper and usage and attitudes research for CPG brands and retailers to product research for tech teams.",
       "tools": [
         "create_research_session",
         "upload_research_source",
         "chat_research_session"
       ],
-      "sha256": "a03752a6bab6e33b8601299a5e714511f156ad67f8556b7133661e9fbedecc9b",
+      "sha256": "1f05a6363b1842ae400018022ad808a52d96d8eae16dfb45195938498b40839a",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/user-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/user-research"
     }

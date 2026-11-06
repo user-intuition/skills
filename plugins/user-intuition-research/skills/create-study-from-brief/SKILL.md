@@ -1,6 +1,6 @@
 ---
 name: create-study-from-brief
-description: Use when the user wants to create a User Intuition interview study from a brief, goal, problem, or research idea.
+description: Use when the user wants to create a User Intuition interview study (user interviews, customer interviews, market research, concept or prototype tests with real people) from a brief, goal, problem, or research idea.
 allowed-tools: Read
 ---
 

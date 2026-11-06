@@ -1,6 +1,6 @@
 # User Intuition: run real qualitative research from your AI agent
 
-Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.
+Qualitative research with real people: AI-moderated interviews, 4M+ vetted panel, 80+ languages. Run user interviews, customer interviews, concept tests and prototype tests from your AI agent.
 
 Ask your agent to run a concept test with 20 frozen-dinner buyers, find out why shoppers trade down to a store brand, or learn why trial users of your app don't activate. It drafts the study, shows you the plan and the cost, and once you confirm, it fields AI-moderated interviews (typically 20–30 minutes) and returns findings with verbatim quotes.
 Interviews ladder 5–7 levels deep, from what people did to why it matters to them. Participants come from a vetted 4M+ consumer panel or from your own customers, by voice, chat or video in 80+ languages.

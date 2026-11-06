@@ -8,7 +8,7 @@ User Intuition
 
 ## One-line description
 
-Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.
+Qualitative research with real people: AI-moderated interviews, 4M+ vetted panel, 80+ languages.
 
 ## Category / tags
 
