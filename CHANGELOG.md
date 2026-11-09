@@ -2,6 +2,12 @@
 
 Versions follow the plugin version in `plugins/user-intuition-research/.claude-plugin/plugin.json`.
 
+## 1.6.4: listing kit copy
+
+- New one-line description everywhere, from the listing kit: "Qualitative research with real people: AI-moderated interviews, 4M+ vetted panel, 80+ languages." It names the panel and languages, which directories and agents match on; the old line named neither. `scripts/check-skills.mjs` still enforces one line across manifests, the README and the listing draft.
+- Manifest keywords add user-interviews, market-research, prototype-testing, participant-recruitment, focus-group-alternative and ai-moderated-interviews.
+- `create-study-from-brief`, `field-a-panel` and `user-research` descriptions name the category nouns (user and customer interviews, market research, focus-group alternative, the 4M+ vetted consumer panel) so a plain request routes to them.
+
 ## 1.6.3: ChatGPT plugin and listing cleanup
 
 - The Cursor manifests pointed at the deleted `icon.svg`; they now use `assets/logo.png` (from 1.6.2). Every manifest, `package.json` and `catalog.json` carry 1.6.3, and `scripts/check-skills.mjs` fails if they drift or the CHANGELOG has no entry.

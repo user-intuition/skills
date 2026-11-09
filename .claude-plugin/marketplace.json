@@ -1,7 +1,7 @@
 {
   "name": "user-intuition",
   "metadata": {
-    "description": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests."
+    "description": "Qualitative research with real people: AI-moderated interviews, 4M+ vetted panel, 80+ languages."
   },
   "owner": {
     "name": "User Intuition",
@@ -13,7 +13,7 @@
       "name": "user-intuition-research",
       "displayName": "User Intuition",
       "source": "./plugins/user-intuition-research",
-      "description": "Run qualitative research with real people: AI-moderated in-depth interviews, concept tests, and prototype tests.",
+      "description": "Qualitative research with real people: AI-moderated interviews, 4M+ vetted panel, 80+ languages.",
       "author": {
         "name": "User Intuition",
         "url": "https://www.userintuition.ai"
@@ -29,7 +29,13 @@
         "qualitative-research",
         "consumer-insights",
         "shopper-research",
-        "cpg"
+        "cpg",
+        "user-interviews",
+        "market-research",
+        "prototype-testing",
+        "participant-recruitment",
+        "focus-group-alternative",
+        "ai-moderated-interviews"
       ]
     }
   ]
