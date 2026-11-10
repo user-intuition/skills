@@ -1,6 +1,6 @@
 ---
 name: setup
-description: Use when User Intuition was just installed or connected, or the user asks how to get started, whether their account is connected, or what it can do for qualitative research. Checks the connection and routes to the right workflow. Not for a specific request another skill covers.
+description: Use when User Intuition was just installed or connected, or the user asks how to get started, what their plan allows, or what it can do for qualitative research. Checks the connection, workspace, and plan, then routes to the right workflow.
 allowed-tools: Read
 ---
 
@@ -23,6 +23,20 @@ Call `get_account`. It is read-only.
   - **Cursor or another MCP client:** add `https://mcp.userintuition.ai/mcp` as a remote MCP server and complete the browser sign-in.
 
 Never ask the user to paste a password, API key, token, or authorization code into the chat. Sign-in happens in their browser.
+
+### Check what the selected plan allows
+
+Read `billing.plan_slug` from `get_account` in the selected workspace. If it is absent, null, or unrecognized, check the dashboard Wallet or ask the user to confirm the plan before using a plan-dependent tool. A role, API-key scope, credit balance, or payment method does not tell you the plan.
+
+| Workspace plan | Available workflows and limits |
+|---|---|
+| Starter (`starter`, `starter-v2`) | Pay as you go. Draft and run studies, recruit a panel or invite your own participants, and read study results. Full Intelligence Hub sessions, uploads, and generated Hub outputs are not included. |
+| Professional (`pro-plan`, `pro-plan-v2`) | Includes the study workflows and Intelligence Hub. Included interview credits are monthly and do not roll over. Use the actual workspace balance; recruiting is billed separately. |
+| Enterprise (`enterprise`) | Includes the study workflows and Intelligence Hub. Credit allotments and commercial limits are set by the workspace's agreement. Use its actual balance and terms. |
+
+For study findings without Hub, use `get_study_report` or the `search-research` skill with studies the user can access. Before paid recruitment, check the actual workspace balance and use `estimate_panel` in the panel workflow for the current quote.
+
+Plan access, organization membership, and API-key scopes are separate checks. If a tool returns 403, explain the reason it gives and do not repeat the call unchanged. If the resource was shared from another organization, ask the person who shared it to add the user to that organization. If the user is already a member, confirm the workspace and pass its `organization_id`.
 
 ## 2. Ask what they want to learn
 

@@ -40,7 +40,7 @@ Use only the material the user provides: transcripts, notes, survey verbatims, r
 
 Rules: quote only exact text that appears in a source; never invent, merge, or tidy a quote, and never attribute a quote to a source you did not read. Prevalence describes this material, not a population. With fewer than five sources, label every finding directional.
 
-If the user has a User Intuition account and wants the material searchable next to their studies, they can upload it to a research session with `create_research_session` and `upload_research_source`, then ask questions with `chat_research_session`. Cite only labels the tool returns.
+If the user wants the material searchable next to their User Intuition studies, call `get_account` for the intended workspace first. Only proceed with the Intelligence Hub workflow on Professional (`pro-plan`, `pro-plan-v2`) or Enterprise (`enterprise`): use `create_research_session`, `upload_research_source`, and `chat_research_session`. Cite only labels the tool returns. On Starter, continue synthesizing the supplied material in chat; use `search-research` for existing study evidence. If the plan is unknown, ask the user to verify it in the dashboard Wallet before calling Hub tools.
 
 ## Route C: field it with User Intuition
 

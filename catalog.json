@@ -249,18 +249,18 @@
         "get_study_report",
         "get_interview"
       ],
-      "sha256": "03b7cdad00e3862c0cd7ccab66575d9c6c6b5e43da978a765e1c4aa904b0cb51",
+      "sha256": "c6d846ac32302c6c4fa76c7a1cb01e350315d12d4dc1bdee96a81645ec181ef0",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/search-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/search-research"
     },
     {
       "name": "setup",
-      "description": "Use when User Intuition was just installed or connected, or the user asks how to get started, whether their account is connected, or what it can do for qualitative research. Checks the connection and routes to the right workflow. Not for a specific request another skill covers.",
+      "description": "Use when User Intuition was just installed or connected, or the user asks how to get started, what their plan allows, or what it can do for qualitative research. Checks the connection, workspace, and plan, then routes to the right workflow.",
       "tools": [
         "get_account",
         "list_organizations"
       ],
-      "sha256": "18bdd393f7ea1736a870f3dd085462e936ffeb9d1dc2033a9854526e3b9e8713",
+      "sha256": "74da0394285d3f7480468e4baf62f81b3eb1d051252e0ad7b885aee73a387633",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/setup/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/setup"
     },
@@ -272,7 +272,7 @@
         "upload_research_source",
         "chat_research_session"
       ],
-      "sha256": "1f05a6363b1842ae400018022ad808a52d96d8eae16dfb45195938498b40839a",
+      "sha256": "bfe8b17d8ed10f196ffe985fd73242bfe663131ec6d7880cb2ea80d4c274bc87",
       "url": "https://raw.githubusercontent.com/user-intuition/skills/main/plugins/user-intuition-research/skills/user-research/SKILL.md",
       "documentation": "https://docs.userintuition.ai/skills/user-research"
     }
