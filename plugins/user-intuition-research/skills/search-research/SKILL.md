@@ -4,6 +4,8 @@ description: Use when the user wants existing User Intuition findings or partici
 allowed-tools: Read
 ---
 
+Use study-level search on Starter, Professional, or Enterprise. These tools search authorized, indexed study records; they do not require an Intelligence Hub session. If the user has several workspaces, confirm which one to use and pass its `organization_id`. After a 403, resolve the workspace or scope issue in the tool's error before trying again.
+
 1. Turn the user's information need into a query and identify at least one authorized `study_id`. Preserve any supplied date or content-type constraints; do not add filters without a reason grounded in the request.
 2. Call `search_research` with `filters.study_ids` and, when useful, `content_types`, `research_date_from`, or `research_date_to`. Supported content types are `study_plan`, `study_finding`, `participant_profile`, `participant_response`, and `recommended_next_step`. Use a limit from 1–50. Follow `next_cursor` with the same query, filters, and limit until it is null when the task needs broader coverage. A final page can be empty.
 3. When the user asks a question across studies, call `answer_research` with the question and the same authorized study IDs. Its prose is generated from bounded indexed evidence; inspect every numbered citation's `study_id`, `content_id`, `content_type`, and `report_id` before presenting the answer. If `insufficient_evidence` is true, say so. Do not treat a cited summary as a verbatim participant quote.
