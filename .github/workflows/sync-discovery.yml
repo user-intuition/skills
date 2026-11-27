@@ -3,11 +3,12 @@ name: Sync docs, website and ChatGPT plugin
 # When skill files change on main, regenerate the docs pages and the website's
 # agent-skills index from them (scripts/export-discovery.mjs), copy the skills into
 # the ChatGPT/Codex plugin package (the MCP server repo's scripts/sync-openai-skills.mjs),
-# and open or update one PR in each repo, pinned to this commit. Merging those PRs
-# stays manual.
+# and open or update one PR in each repo, pinned to this commit. The docs PR merges
+# itself once the docs repo's drift check passes; the website and MCP server PRs
+# stay manual.
 #
-# Needs the DISCOVERY_SYNC_TOKEN secret: a token that can push branches and open
-# PRs in Pen-and-Paper-AI/userintuition-docs, Pen-and-Paper-AI/userintuition-website
+# Needs the DISCOVERY_SYNC_TOKEN secret: a token that can push branches, open
+# and merge PRs in Pen-and-Paper-AI/userintuition-docs, Pen-and-Paper-AI/userintuition-website
 # and Pen-and-Paper-AI/userintuition-mcpserver-ts.
 on:
   push:
@@ -76,6 +77,38 @@ jobs:
           }
           sync docs-repo Pen-and-Paper-AI/userintuition-docs
           sync website-repo Pen-and-Paper-AI/userintuition-website
+      - name: Auto-merge the docs sync PR once its drift check passes
+        # Docs pages are generated and never hand-edited, so a human merge only adds lag
+        # (PR #172 sat 18 days). Fail closed: merge only when the docs repo's `drift`
+        # check succeeded on this exact head commit; otherwise leave the PR open and fail
+        # this step so the red run surfaces. Website and MCP server PRs stay manual (the
+        # website needs `npm run deploy`; an MCP server merge deploys production).
+        env:
+          GH_TOKEN: ${{ secrets.DISCOVERY_SYNC_TOKEN }}
+        run: |
+          repo=Pen-and-Paper-AI/userintuition-docs branch=sync/user-intuition-skills
+          pr=$(gh pr list --repo "$repo" --head "$branch" --state open --json number --jq '.[0].number // empty')
+          if [ -z "$pr" ]; then
+            echo "No open docs sync PR to merge"
+            exit 0
+          fi
+          sha=$(gh pr view "$pr" --repo "$repo" --json headRefOid --jq .headRefOid)
+          state=""
+          for attempt in $(seq 1 90); do
+            state=$(gh api "repos/$repo/commits/$sha/check-runs?check_name=drift" \
+              --jq '.check_runs | sort_by(.started_at) | last | if . == null then "missing" else "\(.status)/\(.conclusion)" end')
+            case "$state" in
+              completed/success) break ;;
+              completed/*) echo "::error::drift check on $repo#$pr ended $state; leaving the PR open for review"; exit 1 ;;
+            esac
+            sleep 10
+          done
+          if [ "$state" != "completed/success" ]; then
+            echo "::error::drift check on $repo#$pr did not pass within 15 minutes (last state: $state); leaving the PR open"
+            exit 1
+          fi
+          gh pr merge "$pr" --repo "$repo" --squash --match-head-commit "$sha"
+          echo "Merged $repo#$pr at ${sha::7}"
 
   openai-plugin:
     # Runs after the sync job's npm test, so it never pushes skills that fail validation.
